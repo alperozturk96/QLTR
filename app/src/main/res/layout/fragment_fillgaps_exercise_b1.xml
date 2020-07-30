@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pure_black">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mainSectionCS"
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="match_parent">
+
+        <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:id="@+id/answer3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint=".........................................."
+            android:inputType="textPersonName"
+            app:bootstrapBrand="info"
+            app:bootstrapSize="md"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.731"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.592" />
+
+        <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:id="@+id/answer4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint=".........................................."
+            app:bootstrapBrand="info"
+            app:bootstrapSize="md"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.668"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.691" />
+
+        <com.beardedhen.androidbootstrap.BootstrapWell
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            app:bootstrapSize="xs"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.691">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="4) Sinirliydim. Çünkü" />
+        </com.beardedhen.androidbootstrap.BootstrapWell>
+
+        <com.beardedhen.androidbootstrap.BootstrapWell
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            app:bootstrapSize="xs"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.587">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="3) Endişeliydim. Çünkü" />
+        </com.beardedhen.androidbootstrap.BootstrapWell>
+
+
+        <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:id="@+id/answer2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint=".........................................."
+            app:bootstrapBrand="info"
+            app:bootstrapSize="md"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.702"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.493" />
+
+        <com.beardedhen.androidbootstrap.BootstrapWell
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            app:bootstrapSize="xs"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.007"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.486">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="2) Mutluydum. Çünkü" />
+        </com.beardedhen.androidbootstrap.BootstrapWell>
+
+        <com.beardedhen.androidbootstrap.BootstrapLabel
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aşağıdaki cümlelerden hangisi Türkiye’deki ilk gününüze ait düşünceleri yansıtı yor? \n\n Örnekteki gibi nedenleriyle yazalım."
+            app:bootstrapBrand="secondary"
+            app:bootstrapHeading="h6"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.1"
+            app:roundedCorners="false" />
+
+
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:text="Heyecanlıydım. Çünkü ilk defa yeni bir ülkeye geliyordum."
+            app:bootstrapBrand="primary"
+            app:bootstrapSize="md"
+            app:buttonMode="regular"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.25"
+            app:roundedCorners="true"
+            app:showOutline="false" />
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/show_results"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sonuçları gör."
+            app:bootstrapBrand="success"
+            app:bootstrapSize="md"
+            app:buttonMode="regular"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.8"
+            app:roundedCorners="true"
+            app:showOutline="false" />
+
+        <ImageView
+            android:layout_width="431dp"
+            android:layout_height="11dp"
+            android:src="@drawable/straigthline"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.443" />
+
+        <ImageView
+            android:layout_width="431dp"
+            android:layout_height="11dp"
+            android:src="@drawable/straigthline"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.63" />
+
+        <ImageView
+            android:layout_width="431dp"
+            android:layout_height="11dp"
+            android:src="@drawable/straigthline"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.53" />
+
+
+        <com.beardedhen.androidbootstrap.BootstrapWell
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            app:bootstrapSize="xs"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.39">
+
+            <TextView
+                android:id="@+id/question1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="1) Korkuyordum. Çünkü" />
+        </com.beardedhen.androidbootstrap.BootstrapWell>
+
+        <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:id="@+id/answer1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint=".........................................."
+            app:bootstrapBrand="info"
+            app:bootstrapSize="md"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.753"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.402" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.beardedhen.androidbootstrap.BootstrapWell
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        app:bootstrapSize="xs"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3">
+
+        <TextView
+            android:id="@+id/allAnswersResult"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:gravity="center" />
+    </com.beardedhen.androidbootstrap.BootstrapWell>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

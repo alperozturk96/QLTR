@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/pure_black"
+    android:layout_height="match_parent">
+
+
+    <com.beardedhen.androidbootstrap.BootstrapLabel
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aşağıdaki rakamlara dokunarak doğru yazımlarını seçin."
+        app:bootstrapBrand="danger"
+        app:bootstrapHeading="h6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.12"
+        app:roundedCorners="true" />
+
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/btn_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        app:bootstrapBrand="primary"
+        app:bootstrapSize="xl"
+        app:buttonMode="regular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.206"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.29"
+        app:roundedCorners="true"
+        app:showOutline="false" />
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/btn_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        app:bootstrapBrand="primary"
+        app:bootstrapSize="xl"
+        app:buttonMode="regular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="wrap"
+        app:layout_constraintHorizontal_bias="0.776"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.29"
+        app:roundedCorners="true"
+        app:showOutline="false" />
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/btn_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4"
+        app:bootstrapBrand="primary"
+        app:bootstrapSize="xl"
+        app:buttonMode="regular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="wrap"
+        app:layout_constraintHorizontal_bias="0.206"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.533"
+        app:roundedCorners="true"
+        app:showOutline="false" />
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/btn_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        app:bootstrapBrand="primary"
+        app:bootstrapSize="xl"
+        app:buttonMode="regular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="wrap"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.533"
+        app:roundedCorners="true"
+        app:showOutline="false" />
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/btn_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6"
+        app:bootstrapBrand="primary"
+        app:bootstrapSize="xl"
+        app:buttonMode="regular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="wrap"
+        app:layout_constraintHorizontal_bias="0.776"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.533"
+        app:roundedCorners="true"
+        app:showOutline="false" />
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/btn_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7"
+        app:bootstrapBrand="primary"
+        app:bootstrapSize="xl"
+        app:buttonMode="regular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="wrap"
+        app:layout_constraintHorizontal_bias="0.206"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.778"
+        app:roundedCorners="true"
+        app:showOutline="false" />
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/btn_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8"
+        app:bootstrapBrand="primary"
+        app:bootstrapSize="xl"
+        app:buttonMode="regular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="wrap"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.778"
+        app:roundedCorners="true"
+        app:showOutline="false" />
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/btn_9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9"
+        app:bootstrapBrand="primary"
+        app:bootstrapSize="xl"
+        app:buttonMode="regular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="wrap"
+        app:layout_constraintHorizontal_bias="0.776"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.778"
+        app:roundedCorners="true"
+        app:showOutline="false" />
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/btn_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        app:bootstrapBrand="primary"
+        app:bootstrapSize="xl"
+        app:buttonMode="regular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="wrap"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.29"
+        app:roundedCorners="true"
+        app:showOutline="false" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

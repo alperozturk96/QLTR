@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/pure_black"
+    android:layout_height="match_parent"
+    tools:context=".Sub_Core.BodyPartsExampleA1">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/interior_organs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/heart"
+            android:layout_width="105dp"
+            android:layout_height="77dp"
+            android:onClick="showInfo"
+            android:src="@drawable/heart"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.901"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.483" />
+
+        <ImageView
+            android:id="@+id/brain"
+            android:layout_width="105dp"
+            android:layout_height="77dp"
+            android:onClick="showInfo"
+            android:src="@drawable/brain"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.114"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.218" />
+
+        <ImageView
+            android:id="@+id/lungs"
+            android:layout_width="105dp"
+            android:layout_height="77dp"
+            android:onClick="showInfo"
+            android:src="@drawable/lungs"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.114"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.483" />
+
+        <ImageView
+            android:id="@+id/kidney"
+            android:layout_width="105dp"
+            android:layout_height="77dp"
+            android:onClick="showInfo"
+            android:src="@drawable/kidney"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.901"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.749" />
+
+        <ImageView
+            android:id="@+id/bowel"
+            android:layout_width="105dp"
+            android:layout_height="77dp"
+            android:onClick="showInfo"
+            android:src="@drawable/bowel"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.114"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.749" />
+
+        <ImageView
+            android:id="@+id/stomach"
+            android:layout_width="105dp"
+            android:layout_height="77dp"
+            android:onClick="showInfo"
+            android:src="@drawable/stomach"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.947"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.218" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/external_organs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/nose"
+            android:layout_width="105dp"
+            android:layout_height="77dp"
+            android:onClick="showInfo"
+            android:src="@drawable/nose"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.901"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.25" />
+
+        <ImageView
+            android:id="@+id/eyes"
+            android:layout_width="105dp"
+            android:layout_height="77dp"
+            android:onClick="showInfo"
+            android:src="@drawable/eyes"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.114"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.25" />
+
+        <ImageView
+            android:id="@+id/foot"
+            android:layout_width="105dp"
+            android:layout_height="77dp"
+            android:onClick="showInfo"
+            android:src="@drawable/foot"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.114"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.759" />
+
+        <ImageView
+            android:id="@+id/hand"
+            android:layout_width="105dp"
+            android:layout_height="77dp"
+            android:onClick="showInfo"
+            android:src="@drawable/hand"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.901"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.778" />
+
+        <ImageView
+            android:id="@+id/ear"
+            android:layout_width="105dp"
+            android:layout_height="77dp"
+            android:onClick="showInfo"
+            android:src="@drawable/ear"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.901"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.512" />
+
+        <ImageView
+            android:id="@+id/shoulder"
+            android:layout_width="105dp"
+            android:layout_height="77dp"
+            android:onClick="showInfo"
+            android:src="@drawable/shoulder"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.114"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.501" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.beardedhen.androidbootstrap.BootstrapLabel
+        android:id="@+id/interiorParts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="interiorpartClick"
+        android:text="İç Organlar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:bootstrapBrand="secondary"
+        app:bootstrapHeading="h4"
+        app:roundedCorners="false"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.3"
+        />
+
+    <com.beardedhen.androidbootstrap.BootstrapLabel
+        android:id="@+id/externalParts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="externalpartClick"
+        android:text="Dış Bölümler"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:bootstrapBrand="secondary"
+        app:bootstrapHeading="h4"
+        app:roundedCorners="false"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.6"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

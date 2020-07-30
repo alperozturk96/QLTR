@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/pure_black"
+    android:layout_height="match_parent"
+    tools:context=".Authentication.Login">
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.152"
+        app:srcCompat="@drawable/justupic" />
+
+
+    <com.beardedhen.androidbootstrap.BootstrapEditText
+        android:id="@+id/e_mail"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:hint="Lütfen E-Mail Adresi Giriniz"
+        android:text="lixt1@outlook.com"
+        app:bootstrapBrand="info"
+        app:bootstrapSize="md"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.658"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.359" />
+
+    <com.beardedhen.androidbootstrap.BootstrapEditText
+        android:id="@+id/password"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:hint="Lütfen E-Mail Adresi Giriniz"
+        android:inputType="textPassword"
+        android:text="159159fx"
+        app:bootstrapBrand="info"
+        app:bootstrapSize="md"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.658"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.469" />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.152"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.357"
+        app:srcCompat="@drawable/email" />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.152"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.466"
+        app:srcCompat="@drawable/password" />
+
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/btn_forgotPasswd"
+        android:layout_width="174dp"
+        android:layout_height="38dp"
+        android:onClick="goToPasswordResetScreen"
+        android:text="Şifremi Unuttum"
+        app:bootstrapBrand="danger"
+        app:bootstrapSize="lg"
+        app:buttonMode="regular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.72"
+        app:roundedCorners="true"
+        app:showOutline="false"
+        tools:ignore="OnClick" />
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/btn_signup"
+        android:layout_width="110dp"
+        android:layout_height="45dp"
+        android:onClick="goToSignUpScreen"
+        android:text="Kayıt Ol"
+        app:bootstrapBrand="primary"
+        app:bootstrapSize="lg"
+        app:buttonMode="regular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.79"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.588"
+        app:roundedCorners="true"
+        app:showOutline="false"
+        tools:ignore="OnClick" />
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/btn_login"
+        android:layout_width="83dp"
+        android:layout_height="45dp"
+        android:onClick="loginIntoDatabase"
+        android:text="GİRİŞ"
+        app:bootstrapBrand="success"
+        app:bootstrapSize="lg"
+        app:buttonMode="regular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.256"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.588"
+        app:roundedCorners="true"
+        app:showOutline="false"
+        tools:ignore="OnClick" />
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/refresh"
+        android:layout_width="225dp"
+        android:layout_height="39dp"
+        android:onClick="refreshOnClick"
+        android:text="Bağlantıyı Kontrol Et"
+        app:bootstrapBrand="danger"
+        app:bootstrapSize="lg"
+        app:buttonMode="regular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.908"
+        app:roundedCorners="true"
+        app:showOutline="false"
+        tools:ignore="OnClick" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

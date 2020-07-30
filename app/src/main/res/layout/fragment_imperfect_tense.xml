@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/pure_black"
+    android:layout_height="match_parent">
+
+    <com.beardedhen.androidbootstrap.BootstrapLabel
+        android:id="@+id/infoHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Şimdiki zamanın hikâyesi, geçmişte olan ve bir süre devam eden olayları anlatmak için kullanılır. Ayrıca geçmişte gerçekleş- mesi çok yakın olup gerçekleşmeyen olayların anlatı mında kullanılır. \n\n The imperfect tense is used to describe the events / acti ons which happened and conti nued for some ti me in the past. Also, it is used in descripti on of events did not happen but very close to the realizati on in the past."
+        app:bootstrapBrand="secondary"
+        app:bootstrapHeading="h6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1"
+        app:roundedCorners="false" />
+
+    <ImageView
+        android:id="@+id/imperfect_image_info"
+        android:layout_width="408dp"
+        android:layout_height="180dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.411"
+        app:srcCompat="@drawable/imperfect_tense_info" />
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/btn_sampleSentence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:bootstrapBrand="primary"
+        app:bootstrapSize="lg"
+        app:buttonMode="regular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45"
+        android:clickable="false"
+        app:roundedCorners="true"
+        app:showOutline="false" />
+
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/btn_showInfos"
+        android:layout_width="211dp"
+        android:layout_height="53dp"
+        android:text="Cümle Örnekleri İçin Tıklayın"
+        app:bootstrapBrand="primary"
+        app:bootstrapSize="md"
+        app:buttonMode="regular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.78"
+        app:roundedCorners="true"
+        app:showOutline="false" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

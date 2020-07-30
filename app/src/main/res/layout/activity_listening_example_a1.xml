@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/pure_black"
+    android:layout_height="match_parent"
+    tools:context=".Sub_Core.ListeningExampleA1">
+
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/refresh"
+        android:layout_width="225dp"
+        android:layout_height="39dp"
+        android:onClick="refreshOnClick"
+        android:text="Bağlantıyı Kontrol Et"
+        app:bootstrapBrand="danger"
+        app:bootstrapSize="lg"
+        app:buttonMode="regular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976"
+        app:roundedCorners="true"
+        app:showOutline="false"
+        tools:ignore="OnClick" />
+
+    <com.beardedhen.androidbootstrap.BootstrapWell
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        app:bootstrapSize="md"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintVertical_bias="0.27">
+
+        <TextView
+            android:id="@+id/gokhan"
+            android:onClick="listen"
+            app:layout_constraintVertical_bias="0.27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Hello. My name is Gökhan. I am (I’m) 11 years old and I am a student. I am from İstanbul. I like reading books." />
+    </com.beardedhen.androidbootstrap.BootstrapWell>
+
+    <com.beardedhen.androidbootstrap.BootstrapWell
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        app:bootstrapSize="md"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintVertical_bias="0.521">
+
+        <TextView
+            android:id="@+id/altan"
+            android:onClick="listen"
+            app:layout_constraintVertical_bias="0.521"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Hello! I am Altan. I recently graduated in philosophy, they were 4 difficult years but it was worth it! We knew each other with Sally at the debate group’s party last year and we got along really well. The reason should be that we both like techno music. And you ?" />
+    </com.beardedhen.androidbootstrap.BootstrapWell>
+
+
+    <com.beardedhen.androidbootstrap.BootstrapWell
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        app:bootstrapSize="md"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintVertical_bias="0.823">
+
+        <TextView
+            android:id="@+id/ali"
+            android:onClick="listen"
+            app:layout_constraintVertical_bias="0.823"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="My name is Ali. I am from Istanbul and I live there. I was born in Kartal. I am 24 years old. I study at university for getting my master’s degree. I studied international relations. I like reading and listening to music. Also, swimming… I live with my mom and dad. My best friends are Ilgaz and Simge." />
+    </com.beardedhen.androidbootstrap.BootstrapWell>
+
+    <com.beardedhen.androidbootstrap.BootstrapLabel
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aşağıdaki cümlelere dokunarak cümleleri dinleyebilirsiniz."
+        app:bootstrapBrand="secondary"
+        app:bootstrapHeading="h5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1"
+        app:roundedCorners="false" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

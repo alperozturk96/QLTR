@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/pure_black"
+    android:layout_height="match_parent">
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/btn_levelImA1"
+        android:layout_width="101dp"
+        android:layout_height="33dp"
+        android:onClick="speech_levela1OnClick"
+        android:text="SEVİYE A1"
+        app:bootstrapBrand="secondary"
+        app:bootstrapSize="md"
+        app:buttonMode="regular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.244"
+        app:roundedCorners="true"
+        app:showOutline="false" />
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:layout_width="101dp"
+        android:layout_height="33dp"
+        android:onClick="speech_levela2OnClick"
+        android:text="SEVİYE A2"
+        app:bootstrapBrand="secondary"
+        app:bootstrapSize="md"
+        app:buttonMode="regular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.577"
+        app:roundedCorners="true"
+        app:showOutline="false" />
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:layout_width="180dp"
+        android:layout_height="41dp"
+        android:onClick="dailytalks"
+        android:text="GÜNLÜK KONUŞMALAR"
+        app:bootstrapBrand="secondary"
+        app:bootstrapSize="md"
+        app:buttonMode="regular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.536"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.891"
+        app:roundedCorners="true"
+        app:showOutline="false" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:onClick="speech_levela1OnClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1"
+        app:srcCompat="@drawable/levela1" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:onClick="speech_levela2OnClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.469"
+        app:srcCompat="@drawable/levela2" />
+
+    <ImageView
+        android:layout_width="116dp"
+        android:layout_height="82dp"
+        android:onClick="dailytalks"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.81"
+        app:srcCompat="@drawable/dailytalks" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

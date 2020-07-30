@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/pure_black"
+    tools:openDrawer="start"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:layout_width="101dp"
+        android:layout_height="33dp"
+        android:onClick="grammerOnClick"
+        android:text="DİL BİLGİSİ"
+        app:bootstrapBrand="secondary"
+        app:bootstrapSize="md"
+        app:buttonMode="regular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.006"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.538"
+        app:roundedCorners="true"
+        app:showOutline="false" />
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:layout_width="101dp"
+        android:layout_height="33dp"
+        android:onClick="speechOnClick"
+        android:text="KONUŞMA"
+        app:bootstrapBrand="secondary"
+        app:bootstrapSize="md"
+        app:buttonMode="regular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.243"
+        app:roundedCorners="true"
+        app:showOutline="false" />
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:layout_width="101dp"
+        android:layout_height="33dp"
+        android:onClick="userOnClick"
+        android:text="KULLANICI"
+        app:bootstrapBrand="secondary"
+        app:bootstrapSize="md"
+        app:buttonMode="regular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.853"
+        app:roundedCorners="true"
+        app:showOutline="false" />
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:layout_width="115dp"
+        android:layout_height="33dp"
+        android:onClick="practiseOnClick"
+        android:text="EGZERSİZLER"
+        app:bootstrapBrand="secondary"
+        app:bootstrapSize="md"
+        app:buttonMode="regular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.983"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.538"
+        app:roundedCorners="true"
+        app:showOutline="false" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:onClick="userOnClick"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.774"
+        app:srcCompat="@drawable/justupic" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:onClick="grammerOnClick"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.009"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.419"
+        app:srcCompat="@drawable/grammer" />
+
+    <ImageView
+        android:layout_width="72dp"
+        android:layout_height="104dp"
+        android:onClick="practiseOnClick"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.952"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.416"
+        app:srcCompat="@drawable/practice" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:onClick="speechOnClick"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.098"
+        app:srcCompat="@drawable/chat" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

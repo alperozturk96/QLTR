@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pure_black"
+    tools:context=".Authentication.SignUp">
+
+
+    <com.beardedhen.androidbootstrap.BootstrapEditText
+        android:id="@+id/e_mail"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:hint="Lütfen E-Mail Adresinizi Girin."
+        android:inputType="textEmailAddress"
+        app:bootstrapBrand="info"
+        app:bootstrapSize="md"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.316"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.263" />
+
+    <com.beardedhen.androidbootstrap.BootstrapEditText
+        android:id="@+id/password"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:hint="Lütfen Şifrenizi Tekrar Edin."
+        android:inputType="textPassword"
+        app:bootstrapBrand="info"
+        app:bootstrapSize="md"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.316"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.343" />
+
+    <com.beardedhen.androidbootstrap.BootstrapEditText
+        android:id="@+id/password_repeat"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:hint="Lütfen Şifrenizi Girin."
+        android:inputType="textPassword"
+        app:bootstrapBrand="info"
+        app:bootstrapSize="md"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.316"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.428" />
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/btn_create_user"
+        android:layout_width="211dp"
+        android:layout_height="45dp"
+        android:onClick="createUserOnClick"
+        android:text="Yeni Kullanıcı Oluştur"
+        app:bootstrapBrand="primary"
+        app:bootstrapSize="lg"
+        app:buttonMode="regular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.628"
+        app:roundedCorners="true"
+        app:showOutline="false"
+        tools:ignore="OnClick" />
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:onClick="returnLoginOnClick"
+        android:text="Ana Menü"
+        app:bootstrapBrand="primary"
+        app:bootstrapSize="lg"
+        app:buttonMode="regular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.949"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.957"
+        app:roundedCorners="true"
+        app:showOutline="false"
+        tools:ignore="OnClick" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

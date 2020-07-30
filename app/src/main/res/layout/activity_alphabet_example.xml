@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sub_Core.AlphabetExamples">
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/refresh"
+        android:layout_width="225dp"
+        android:layout_height="39dp"
+        android:onClick="refreshOnClick"
+        android:text="Bağlantıyı Kontrol Et"
+        app:bootstrapBrand="danger"
+        app:bootstrapSize="lg"
+        app:buttonMode="regular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.847"
+        app:roundedCorners="true"
+        app:showOutline="false"
+        tools:ignore="OnClick" />
+
+    <ListView
+        android:id="@+id/samplewordslist"
+        android:layout_width="451dp"
+        android:layout_height="734dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"></ListView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

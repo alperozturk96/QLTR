@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item
+            android:id="@+id/nav_home"
+            android:title="Ana Menü" />
+
+        <item
+            android:id="@+id/nav_dailytalk"
+            android:title="Günlük Konuşmalar" />
+
+        <item
+            android:id="@+id/nav_profile"
+            android:title="Profilim" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:title="Çıkış Yap" />
+    </group>
+</menu>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:background="@color/pure_black"
+    android:layout_height="match_parent"
+    tools:context=".Core.UserScreen">
+
+
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/btn_sendEmail"
+        android:layout_width="255dp"
+        android:layout_height="41dp"
+        android:onClick="sendEmail"
+        android:text="Geliştirici'ye E-Mail Gönder"
+        app:bootstrapBrand="primary"
+        app:bootstrapSize="lg"
+        app:buttonMode="regular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.814"
+        app:roundedCorners="true"
+        app:showOutline="false"
+        tools:ignore="OnClick" />
+
+    <com.beardedhen.androidbootstrap.BootstrapCircleThumbnail
+        android:layout_width="224dp"
+        android:layout_height="193dp"
+        android:src="@drawable/justupic"
+        app:bootstrapBrand="primary"
+        app:hasBorder="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.027" />
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:text="PUAN:"
+        app:bootstrapBrand="success"
+        app:bootstrapSize="lg"
+        app:buttonMode="regular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.006"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        app:roundedCorners="true"
+        app:showOutline="false"
+        tools:ignore="OnClick" />
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:text="E-Mail:"
+        app:bootstrapBrand="success"
+        app:bootstrapSize="lg"
+        app:buttonMode="regular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.400"
+        app:roundedCorners="true"
+        app:showOutline="false"
+        tools:ignore="OnClick" />
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:text="Puan"
+        android:textSize="24sp"
+        app:bootstrapBrand="primary"
+        app:bootstrapSize="lg"
+        app:buttonMode="regular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.30"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        app:roundedCorners="true" />
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:text="E-Mail"
+        android:textSize="24sp"
+        app:bootstrapBrand="primary"
+        app:bootstrapSize="lg"
+        app:buttonMode="regular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.41"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4"
+        app:roundedCorners="true" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

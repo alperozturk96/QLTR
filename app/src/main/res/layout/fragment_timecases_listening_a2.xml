@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:background="@color/pure_black"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <com.beardedhen.androidbootstrap.BootstrapLabel
+        android:id="@+id/header_timecases"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Örnek Kelimeler"
+        app:bootstrapBrand="secondary"
+        app:bootstrapHeading="h3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1"
+        app:roundedCorners="false" />
+
+
+    <com.beardedhen.androidbootstrap.BootstrapWell
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        app:bootstrapSize="sm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.40">
+
+        <TextView
+            android:id="@+id/info_listening_timecases"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Geniş Zaman (-r; -ar/-er/; -ır/-ir/-ur/-ür): \n\n gel-ir-im \n\n gel-ir-sin \n\n gel-ir \n\n gel-ir-iz \n\n gel-ir-siniz \n\n gel-ir-ler" />
+    </com.beardedhen.androidbootstrap.BootstrapWell>
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/btnListen_timecases"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dinle"
+        app:bootstrapBrand="primary"
+        app:bootstrapSize="lg"
+        app:buttonMode="regular"
+        app:showOutline="false"
+        app:roundedCorners="true"
+        app:layout_constraintVertical_bias="0.70"
+        />
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/btnNext_timecases"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sonraki"
+        app:bootstrapBrand="success"
+        app:bootstrapSize="lg"
+        app:buttonMode="regular"
+        app:showOutline="false"
+        app:roundedCorners="true"
+        app:layout_constraintVertical_bias="0.90"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/grammar_levelb1"
+    android:layout_width="match_parent"
+    android:background="@color/pure_black"
+    android:layout_height="match_parent"
+    tools:context=".Core.GrammarB1">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/grammar_levelb1_main"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.drawerlayout.widget.DrawerLayout
+            android:id="@+id/drawer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/pure_black"
+            android:fitsSystemWindows="true"
+            tools:openDrawer="start">
+
+
+            <com.google.android.material.navigation.NavigationView
+                android:id="@+id/nav_view"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:background="@color/pure_black"
+                app:headerLayout="@layout/header"
+                app:itemTextColor="@color/whiteCardColor"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:menu="@menu/navigationmenu" />
+
+
+        </androidx.drawerlayout.widget.DrawerLayout>
+
+        <com.beardedhen.androidbootstrap.BootstrapLabel
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:onClick="adverbOnClick"
+            android:text="Zarf Fiil"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintVertical_bias="0.30"
+            app:bootstrapBrand="secondary"
+            app:bootstrapHeading="h4"
+            app:roundedCorners="false"
+            tools:layout_editor_absoluteX="161dp"
+            tools:layout_editor_absoluteY="139dp" />
+
+        <com.beardedhen.androidbootstrap.BootstrapLabel
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="imperfectOnClick"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="Şimdiki Zaman"
+            app:bootstrapBrand="secondary"
+            app:bootstrapHeading="h4"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintVertical_bias="0.45"
+            app:roundedCorners="false"
+            tools:layout_editor_absoluteX="126dp"
+            tools:layout_editor_absoluteY="277dp" />
+
+        <com.beardedhen.androidbootstrap.BootstrapLabel
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="emergencyOnClick"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="ACİL Numaralar"
+            app:bootstrapBrand="secondary"
+            app:bootstrapHeading="h4"
+            app:roundedCorners="false"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintVertical_bias="0.6"
+            tools:layout_editor_absoluteX="123dp"
+            tools:layout_editor_absoluteY="416dp" />
+
+        <com.beardedhen.androidbootstrap.BootstrapLabel
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:onClick="verbOnClick"
+            android:text="Fiil Listesi"
+            app:bootstrapBrand="secondary"
+            app:bootstrapHeading="h4"
+            app:roundedCorners="false"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintVertical_bias="0.9"
+            tools:layout_editor_absoluteX="149dp"
+            tools:layout_editor_absoluteY="659dp" />
+
+        <com.beardedhen.androidbootstrap.BootstrapLabel
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:onClick="nounOnClick"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintVertical_bias="0.75"
+            android:text="İsim Listesi"
+            app:bootstrapBrand="secondary"
+            app:bootstrapHeading="h4"
+            app:roundedCorners="false"
+            tools:layout_editor_absoluteX="143dp"
+            tools:layout_editor_absoluteY="555dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

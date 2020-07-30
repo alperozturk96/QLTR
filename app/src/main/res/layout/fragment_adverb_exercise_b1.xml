@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/pure_black"
+    android:layout_height="match_parent">
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CÜMLELERİN ÜSTÜNE DOKUNARAK BOŞLUKLARI DOLDURUN"
+        android:textSize="14sp"
+        app:bootstrapBrand="secondary"
+        app:bootstrapSize="md"
+        app:buttonMode="regular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1"
+        app:roundedCorners="true"
+        app:showOutline="false" />
+
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/sentence1"
+        android:layout_width="415dp"
+        android:layout_height="30dp"
+        android:text="Öğretmen eski konuyu tekrar................derse başladı."
+        android:textSize="16sp"
+        app:bootstrapBrand="primary"
+        app:bootstrapSize="md"
+        app:buttonMode="regular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.220"
+        app:roundedCorners="true"
+        app:showOutline="false" />
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/sentence2"
+        android:layout_width="415dp"
+        android:layout_height="30dp"
+        android:text="Yemek kitabına...................lezzetli yemekler yapıyorum."
+        android:textSize="16sp"
+        app:bootstrapBrand="primary"
+        app:bootstrapSize="md"
+        app:buttonMode="regular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.340"
+        app:roundedCorners="true"
+        app:showOutline="false" />
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/sentence3"
+        android:layout_width="415dp"
+        android:layout_height="30dp"
+        android:text="Müzik...................spor yaptı."
+        android:textSize="16sp"
+        app:bootstrapBrand="primary"
+        app:bootstrapSize="md"
+        app:buttonMode="regular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.460"
+        app:roundedCorners="true"
+        app:showOutline="false" />
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/sentence4"
+        android:layout_width="415dp"
+        android:layout_height="30dp"
+        android:text="Adam bir hata yaptı ve.............oradan ayrıldı."
+        android:textSize="16sp"
+        app:bootstrapBrand="primary"
+        app:bootstrapSize="md"
+        app:buttonMode="regular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.580"
+        app:roundedCorners="true"
+        app:showOutline="false" />
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/sentence5"
+        android:layout_width="415dp"
+        android:layout_height="30dp"
+        android:text="Güzel günleri hayal..............uyudu."
+        android:textSize="16sp"
+        app:bootstrapBrand="primary"
+        app:bootstrapSize="md"
+        app:buttonMode="regular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.700"
+        app:roundedCorners="true"
+        app:showOutline="false" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
