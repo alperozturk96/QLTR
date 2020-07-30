@@ -24,102 +24,64 @@ public class GrammarA1 extends AppCompatActivity implements NavigationView.OnNav
     private SideMenu sideMenu;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_grammar_a1);
 
-        try {
-            lm = new LayoutManager(GrammarA1.this);
-            db = new DbOperations(GrammarA1.this);
-            sideMenu = new SideMenu(GrammarA1.this);
-            sideMenu.createDrawer();
-        }
-        catch (Exception e)
-        {
-            Log.e("Core/GrammarA1","OnCreate Exception", e);
-        }
+        lm = new LayoutManager(GrammarA1.this);
+        db = new DbOperations(GrammarA1.this);
+        sideMenu = new SideMenu(GrammarA1.this);
+        sideMenu.createDrawer();
+
     }
 
     public void all_lettersOnClick(View view) {
-        try {
-            Intent intent = new Intent(this, AlphabetA1.class);
-            startActivity(intent);
-        }
-        catch (Exception e)
-        {
-            Log.e("Core/GrammarA1","Intent Exception", e);
-        }
+        Intent intent = new Intent(this, AlphabetA1.class);
+        startActivity(intent);
     }
 
     public void show_fullBodyOnClick(View view) {
-        try {
-            Intent intent = new Intent(this, BodyPartsExampleA1.class);
-            startActivity(intent);
-        }
-        catch (Exception e)
-        {
-            Log.e("Core/GrammarA1","Intent Exception", e);
-        }
+        Intent intent = new Intent(this, BodyPartsExampleA1.class);
+        startActivity(intent);
     }
 
     public void show_itemsOnClick(View view) {
-        try {
-            lm.hideOrShowLayout(R.id.grammarLevelA1Main,false);
-            lm.hideOrShowLayout(R.id.sectionItems,true);
-        }
-        catch (Exception e)
-        {
-            Log.e("Core/GrammarA1","Layout Manager Exception", e);
-        }
+        lm.hideOrShowLayout(R.id.grammarLevelA1Main, false);
+        lm.hideOrShowLayout(R.id.sectionItems, true);
     }
 
-    public void introduceOnClick(View view)
-    {
-        try {
-            lm.hideOrShowLayout(R.id.grammarLevelA1Main,false);
-            lm.hideOrShowLayout(R.id.sectionIntroduce,true);
-        }
-        catch (Exception e)
-        {
-            Log.e("Core/GrammarA1","Layout Manager Exception", e);
-        }
+    public void introduceOnClick(View view) {
+        lm.hideOrShowLayout(R.id.grammarLevelA1Main, false);
+        lm.hideOrShowLayout(R.id.sectionIntroduce, true);
     }
 
-    public void chooseItem(View view)
-    {
-        try {
-            switch (view.getId()) {
-                case (R.id.glove):
-                    gad.showInfo(view,"Eldiven","", GrammarA1.this);
-                    break;
-                case (R.id.bag):
-                    gad.showInfo(view,"Çanta","", GrammarA1.this);
-                    break;
-                case (R.id.scissor):
-                    gad.showInfo(view,"Makas","", GrammarA1.this);
-                    break;
-                case (R.id.clock):
-                    gad.showInfo(view,"Saat","", GrammarA1.this);
-                    break;
-                case (R.id.sofa):
-                    gad.showInfo(view,"Koltuk","", GrammarA1.this);
-                    break;
-                case (R.id.camera):
-                    gad.showInfo(view,"Kamera","", GrammarA1.this);
-                    break;
-                case (R.id.table):
-                    gad.showInfo(view,"Masa","", GrammarA1.this);
-                    break;
-                case (R.id.chair):
-                    gad.showInfo(view,"Sandalye","", GrammarA1.this);
-                    break;
-            }
-        }
-        catch (Exception e)
-        {
-            Log.e("Core/GrammarA1","GAD Item Show Exception", e);
+    public void chooseItem(View view) {
+        switch (view.getId()) {
+            case (R.id.glove):
+                gad.showInfo(view, "Eldiven", "", GrammarA1.this);
+                break;
+            case (R.id.bag):
+                gad.showInfo(view, "Çanta", "", GrammarA1.this);
+                break;
+            case (R.id.scissor):
+                gad.showInfo(view, "Makas", "", GrammarA1.this);
+                break;
+            case (R.id.clock):
+                gad.showInfo(view, "Saat", "", GrammarA1.this);
+                break;
+            case (R.id.sofa):
+                gad.showInfo(view, "Koltuk", "", GrammarA1.this);
+                break;
+            case (R.id.camera):
+                gad.showInfo(view, "Kamera", "", GrammarA1.this);
+                break;
+            case (R.id.table):
+                gad.showInfo(view, "Masa", "", GrammarA1.this);
+                break;
+            case (R.id.chair):
+                gad.showInfo(view, "Sandalye", "", GrammarA1.this);
+                break;
         }
     }
 
@@ -128,10 +90,8 @@ public class GrammarA1 extends AppCompatActivity implements NavigationView.OnNav
         try {
             sideMenu.onNavigationItemSelected(menuItem);
             return true;
-        }
-        catch (Exception e)
-        {
-            Log.e("Core/GrammarA1","On Navigation Exception", e);
+        } catch (Exception e) {
+            Log.e("Core/GrammarA1", "On Navigation Exception", e);
             return false;
         }
     }

@@ -52,37 +52,23 @@ public class SignUp extends AppCompatActivity {
         btnSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                try {
-                    str_email = edt_email.getText().toString();
-                    str_password = edt_password.getText().toString().trim();
-                    str_password2 = edt_password2.getText().toString().trim();
+                str_email = edt_email.getText().toString();
+                str_password = edt_password.getText().toString().trim();
+                str_password2 = edt_password2.getText().toString().trim();
 
-                    if (str_password.equals(str_password2)) {
-                        addAuth(str_email, str_password);
-                        addDocument(str_email, str_password);
-                    } else {
-                        Toast.makeText(SignUp.this, "Girilen şifre aynı değil, lütfen tekrar kontrol ediniz.", Toast.LENGTH_SHORT).show();
-                    }
+                if (str_password.equals(str_password2)) {
+                    addAuth(str_email, str_password);
+                    addDocument(str_email, str_password);
+                } else {
+                    Toast.makeText(SignUp.this, "Girilen şifre aynı değil, lütfen tekrar kontrol ediniz.", Toast.LENGTH_SHORT).show();
                 }
-                catch (Exception e)
-                {
-                    Log.e("Authentication/SignUp","Sign Up Button Exception", e);
-                }
-                //startActivity(new Intent(signup.this, loginscreen.class));
-                //finish();
             }
         });
     }
 
     public void returnLoginOnClick(View view) {
-        try {
-            Intent intent = new Intent(this, Login.class);
-            startActivity(intent);
-        }
-        catch (Exception e)
-        {
-            Log.e("Authentication/SignUp","Intent Exception", e);
-        }
+        Intent intent = new Intent(this, Login.class);
+        startActivity(intent);
     }
 
 
@@ -100,12 +86,9 @@ public class SignUp extends AppCompatActivity {
                             }
                         }
                     });
+        } catch (Exception e) {
+            Log.e("Authentication/SignUp", "Adding Authentication Into Database Exception", e);
         }
-        catch (Exception e)
-        {
-            Log.e("Authentication/SignUp","Adding Authentication Into Database Exception", e);
-        }
-        //Login sayfasına düşmüyor, yanlış feedback veriyor.
     }
 
     public void addDocument(String str_email, final String str_password) {
@@ -138,10 +121,8 @@ public class SignUp extends AppCompatActivity {
 
 
             }
-        }
-        catch (Exception e)
-        {
-            Log.e("Authentication/SignUp","Adding Document Into Database Exception", e);
+        } catch (Exception e) {
+            Log.e("Authentication/SignUp", "Adding Document Into Database Exception", e);
         }
     }
 

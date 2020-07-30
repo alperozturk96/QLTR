@@ -8,17 +8,15 @@
     android:background="@color/pure_black"
     tools:context=".Core.GrammarA2">
 
-    <androidx.drawerlayout.widget.DrawerLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
+    <androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/drawer_layout"
-        android:background="@color/pure_black"
-        tools:openDrawer="start"
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/pure_black"
         android:fitsSystemWindows="true"
-        android:layout_height="match_parent">
-
+        tools:openDrawer="start">
 
 
         <com.google.android.material.navigation.NavigationView
@@ -27,8 +25,8 @@
             android:layout_height="match_parent"
             android:layout_gravity="start"
             android:background="@color/pure_black"
-            app:itemTextColor="@color/whiteCardColor"
             app:headerLayout="@layout/header"
+            app:itemTextColor="@color/whiteCardColor"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -37,7 +35,6 @@
 
 
     </androidx.drawerlayout.widget.DrawerLayout>
-
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -96,8 +93,7 @@ These suffixes come only after nouns, and change nouns into adjective."
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="isim + -ll"
-                />
+                android:text="isim + -ll" />
         </com.beardedhen.androidbootstrap.BootstrapWell>
 
         <com.beardedhen.androidbootstrap.BootstrapWell
@@ -117,8 +113,7 @@ These suffixes come only after nouns, and change nouns into adjective."
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Bu makarna çok tuzlu. \n\n Annem çok güzel üzümlü kurabiye yapıyor. \n\n Pazar günü Bursalı bir arkadaşım geliyor."
-                />
+                android:text="Bu makarna çok tuzlu. \n\n Annem çok güzel üzümlü kurabiye yapıyor. \n\n Pazar günü Bursalı bir arkadaşım geliyor." />
         </com.beardedhen.androidbootstrap.BootstrapWell>
 
         <View
@@ -164,8 +159,7 @@ fix is used to indicate absence."
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="isim + -siz"
-                />
+                android:text="isim + -siz" />
         </com.beardedhen.androidbootstrap.BootstrapWell>
 
 
@@ -186,8 +180,7 @@ fix is used to indicate absence."
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Çayı şekersiz içiyorum. \n\n Karıncalar, zararsız hayvanlardır.\n\n İstanbul’da sensiz çok sıkılıyorum."
-                />
+                android:text="Çayı şekersiz içiyorum. \n\n Karıncalar, zararsız hayvanlardır.\n\n İstanbul’da sensiz çok sıkılıyorum." />
         </com.beardedhen.androidbootstrap.BootstrapWell>
 
 
@@ -205,67 +198,63 @@ fix is used to indicate absence."
 
         <com.beardedhen.androidbootstrap.BootstrapLabel
             android:layout_width="wrap_content"
-            android:text="Emir Kipleri"
             android:layout_height="wrap_content"
             android:onClick="imperativeOnClick"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:text="Emir Kipleri"
             app:bootstrapBrand="secondary"
             app:bootstrapHeading="h3"
-            app:roundedCorners="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.2"
-            />
+            app:roundedCorners="false" />
 
         <com.beardedhen.androidbootstrap.BootstrapLabel
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="timecasesOnClick"
             android:text="Bildirme Kipleri"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             app:bootstrapBrand="secondary"
             app:bootstrapHeading="h3"
-            app:roundedCorners="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.8"
-            />
+            app:roundedCorners="false" />
 
         <com.beardedhen.androidbootstrap.BootstrapLabel
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="strengtheningOnClick"
             android:text="Pekiştirme"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             app:bootstrapBrand="secondary"
             app:bootstrapHeading="h3"
-            app:roundedCorners="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.4"
-            />
+            app:roundedCorners="false" />
 
         <com.beardedhen.androidbootstrap.BootstrapLabel
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="adjectivesOnClick"
             android:text="Sıfatlar"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             app:bootstrapBrand="secondary"
             app:bootstrapHeading="h3"
-            app:roundedCorners="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.6"
-            />
+            app:roundedCorners="false" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -294,9 +283,6 @@ fix is used to indicate absence."
             app:roundedCorners="false" />
 
 
-
-
-
         <ImageView
             android:layout_width="389dp"
             android:layout_height="158dp"
@@ -311,8 +297,8 @@ fix is used to indicate absence."
         <com.beardedhen.androidbootstrap.BootstrapLabel
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:bootstrapBrand="secondary"
             android:text="ÖRNEK CÜMLELER"
+            app:bootstrapBrand="secondary"
             app:bootstrapHeading="h6"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -336,12 +322,11 @@ fix is used to indicate absence."
 
             <TextView
                 android:id="@+id/imperativeSampleSentence"
-                android:onClick="listenSampleSentence"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="1) Lütfen derste sessiz olun."
-                />
+                android:onClick="listenSampleSentence"
+                android:text="1) Lütfen derste sessiz olun." />
         </com.beardedhen.androidbootstrap.BootstrapWell>
 
 
@@ -360,12 +345,11 @@ fix is used to indicate absence."
 
             <TextView
                 android:id="@+id/imperativeSampleSentence2"
-                android:onClick="listenSampleSentence"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="2) Toplantı ya Gökhan da gelsin mi ?"
-                />
+                android:onClick="listenSampleSentence"
+                android:text="2) Toplantı ya Gökhan da gelsin mi ?" />
         </com.beardedhen.androidbootstrap.BootstrapWell>
 
 
@@ -384,12 +368,11 @@ fix is used to indicate absence."
 
             <TextView
                 android:id="@+id/imperativeSampleSentence3"
-                android:onClick="listenSampleSentence"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="3) Buraya park etmeyin."
-                />
+                android:onClick="listenSampleSentence"
+                android:text="3) Buraya park etmeyin." />
         </com.beardedhen.androidbootstrap.BootstrapWell>
 
 
@@ -435,8 +418,7 @@ fix is used to indicate absence."
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Ayşe'nin simsiyah saçları var."
-                />
+                android:text="Ayşe'nin simsiyah saçları var." />
         </com.beardedhen.androidbootstrap.BootstrapWell>
 
         <com.beardedhen.androidbootstrap.BootstrapWell
@@ -457,8 +439,7 @@ fix is used to indicate absence."
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Orhun yepyeni bir kalem aldı."
-                />
+                android:text="Orhun yepyeni bir kalem aldı." />
         </com.beardedhen.androidbootstrap.BootstrapWell>
 
         <com.beardedhen.androidbootstrap.BootstrapWell
@@ -479,14 +460,11 @@ fix is used to indicate absence."
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Işıl'ın tertemiz gömleğe sahip."
-                />
+                android:text="Işıl'ın tertemiz gömleğe sahip." />
         </com.beardedhen.androidbootstrap.BootstrapWell>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

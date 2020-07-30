@@ -33,7 +33,7 @@ public class Login extends AppCompatActivity {
     public static int loggedScore;
 
     private BootstrapEditText edt_Email, edt_Password;
-    private BootstrapButton sign_up,login,refresh;
+    private BootstrapButton sign_up, login, refresh;
     private FirebaseAuth auth;
     private TextView forgotPasswd;
 
@@ -80,15 +80,10 @@ public class Login extends AppCompatActivity {
                         return;
                     }
 
-
-                    //authenticate user
                     auth.signInWithEmailAndPassword(email, password)
                             .addOnCompleteListener(Login.this, new OnCompleteListener<AuthResult>() {
                                 @Override
                                 public void onComplete(@NonNull Task<AuthResult> task) {
-                                    // If sign in fails, display a message to the user. If sign in succeeds
-                                    // the auth state listener will be notified and logic to handle the
-                                    // signed in user can be handled in the listener.
                                     if (!task.isSuccessful()) {
                                         // there was an error
                                         if (password.length() < 6) {
@@ -108,33 +103,18 @@ public class Login extends AppCompatActivity {
                             });
                 }
             });
-        }
-        catch(Exception e)
-        {
-            Log.e("Authentication/Login","Login Exception", e);
+        } catch (Exception e) {
+            Log.e("Authentication/Login", "Login Exception", e);
         }
     }
 
-    public void goToPasswordResetScreen(View view)
-    {
-        try {
-            Intent intent = new Intent(this, PasswordReset.class);
-            startActivity(intent);
-        }
-        catch (Exception e)
-        {
-            Log.e("Authentication/Login","Intent Exception", e);
-        }
+    public void goToPasswordResetScreen(View view) {
+        Intent intent = new Intent(this, PasswordReset.class);
+        startActivity(intent);
     }
 
     public void refreshOnClick(View view) {
-        try {
-            checkDeviceNetworkConnection();
-        }
-        catch (Exception e)
-        {
-            Log.e("Authentication/Login","Network Connection Check Exception", e);
-        }
+        checkDeviceNetworkConnection();
     }
 
     public void getLoggedUserInfo() {
@@ -150,23 +130,17 @@ public class Login extends AppCompatActivity {
                             //Log.d("", "DocumentSnapshot data: " + task.getResult().getData());
                             String score = task.getResult().getData().get("score").toString();
                             loggedScore = Integer.parseInt((score));
-                        } else {
-                            //Log.d("FirestoreDemo", "No such document");
                         }
-                    } else {
-                        //Log.d("FirestoreDemo", "get failed with ", task.getException());
                     }
                 }
             });
-        }
-        catch (Exception e)
-        {
-            Log.e("Authentication/Login","Getting User Info Exception", e);
+        } catch (Exception e) {
+            Log.e("Authentication/Login", "Getting User Info Exception", e);
         }
 
     }
 
-    public boolean checkDeviceNetworkConnection() {
+    public void checkDeviceNetworkConnection() {
         try {
             ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
             NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
@@ -177,7 +151,6 @@ public class Login extends AppCompatActivity {
                 login.setEnabled(true);
                 forgotPasswd.setEnabled(true);
                 loginIntoDatabase();
-                return true;
             } else {
                 Toast.makeText(getApplicationContext(), "İnternet Bağlantısı Yok.", Toast.LENGTH_SHORT).show();
                 refresh.setVisibility(View.VISIBLE);
@@ -185,25 +158,15 @@ public class Login extends AppCompatActivity {
                 sign_up.setEnabled(false);
                 login.setEnabled(false);
                 forgotPasswd.setEnabled(false);
-                return false;
             }
-        }
-        catch(Exception e)
-        {
-            Log.e("Authentication/Login","Network Connection Check Exception", e);
-            return false;
+        } catch (Exception e) {
+            Log.e("Authentication/Login", "Network Connection Check Exception", e);
         }
     }
 
     public void goToSignUpScreen(View view) {
-        try {
-            Intent intent = new Intent(this, SignUp.class);
-            startActivity(intent);
-        }
-        catch(Exception e)
-        {
-            Log.e("Authentication/Login","Intent Exception", e);
-        }
+        Intent intent = new Intent(this, SignUp.class);
+        startActivity(intent);
     }
 }
 

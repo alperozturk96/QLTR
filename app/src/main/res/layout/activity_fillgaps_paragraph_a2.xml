@@ -13,24 +13,21 @@
         android:layout_gravity="center"
         android:layout_margin="8dp"
         app:bootstrapSize="md"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.2">
 
         <TextView
             android:id="@+id/questionParagraph00"
-            android:onClick="selectQuestions"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Semih sabah 6:30’da yataktan kalktı............elini yüzünü yıkadı."
-            />
+            android:onClick="selectQuestions"
+            android:text="Semih sabah 6:30’da yataktan kalktı............elini yüzünü yıkadı." />
     </com.beardedhen.androidbootstrap.BootstrapWell>
-
-
 
 
     <com.beardedhen.androidbootstrap.BootstrapLabel
@@ -54,21 +51,20 @@
         android:layout_gravity="center"
         android:layout_margin="8dp"
         app:bootstrapSize="md"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.32">
 
         <TextView
             android:id="@+id/questionParagraph01"
-            android:onClick="selectQuestions"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Sonra ailesi ile birlikte kahvaltı etti..............dişlerini fırçaladı, giyindi ve evden çıktı."
-            />
+            android:onClick="selectQuestions"
+            android:text="Sonra ailesi ile birlikte kahvaltı etti..............dişlerini fırçaladı, giyindi ve evden çıktı." />
     </com.beardedhen.androidbootstrap.BootstrapWell>
 
     <com.beardedhen.androidbootstrap.BootstrapWell
@@ -77,21 +73,20 @@
         android:layout_gravity="center"
         android:layout_margin="8dp"
         app:bootstrapSize="md"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.44">
 
         <TextView
             android:id="@+id/questionParagraph02"
-            android:onClick="selectQuestions"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Durakta on beş dakika..........otobüs geldi."
-            />
+            android:onClick="selectQuestions"
+            android:text="Durakta on beş dakika..........otobüs geldi." />
     </com.beardedhen.androidbootstrap.BootstrapWell>
 
 
@@ -101,21 +96,20 @@
         android:layout_gravity="center"
         android:layout_margin="8dp"
         app:bootstrapSize="md"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.56">
 
         <TextView
             android:id="@+id/questionParagraph03"
-            android:onClick="selectQuestions"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text=" Yol yaklaşık 35 dakika sürdü. Okulun önüne indi............arkadaşlarıyla birlikte kantine gitti, sohbet etti."
-            />
+            android:onClick="selectQuestions"
+            android:text=" Yol yaklaşık 35 dakika sürdü. Okulun önüne indi............arkadaşlarıyla birlikte kantine gitti, sohbet etti." />
     </com.beardedhen.androidbootstrap.BootstrapWell>
 
 
@@ -125,21 +119,20 @@
         android:layout_gravity="center"
         android:layout_margin="8dp"
         app:bootstrapSize="md"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.68">
 
         <TextView
             android:id="@+id/questionParagraph04"
-            android:onClick="selectQuestions"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Saat 9:30’da ders başladı............3 saat ders işlediler.sınavı vardı buyüzden biraz heyecalıydı."
-            />
+            android:onClick="selectQuestions"
+            android:text="Saat 9:30’da ders başladı............3 saat ders işlediler.sınavı vardı buyüzden biraz heyecalıydı." />
     </com.beardedhen.androidbootstrap.BootstrapWell>
 
 
@@ -149,21 +142,20 @@
         android:layout_gravity="center"
         android:layout_margin="8dp"
         app:bootstrapSize="md"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.80">
 
         <TextView
             android:id="@+id/questionParagraph05"
-            android:onClick="selectQuestions"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text=".............eve geldi. Biraz dinlendi, ödevlerini yaptı."
-            />
+            android:onClick="selectQuestions"
+            android:text=".............eve geldi. Biraz dinlendi, ödevlerini yaptı." />
     </com.beardedhen.androidbootstrap.BootstrapWell>
 
 
@@ -173,23 +165,21 @@
         android:layout_gravity="center"
         android:layout_margin="8dp"
         app:bootstrapSize="md"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.92">
 
         <TextView
             android:id="@+id/questionParagraph06"
-            android:onClick="selectQuestions"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Ödevlerini..........dışarıya çıktı.Arkadaşlarıyla futbol oynadı. \n Yemek yedikten sonra biraz kitap okuduve sonra yattı."
-            />
+            android:onClick="selectQuestions"
+            android:text="Ödevlerini..........dışarıya çıktı.Arkadaşlarıyla futbol oynadı. \n Yemek yedikten sonra biraz kitap okuduve sonra yattı." />
     </com.beardedhen.androidbootstrap.BootstrapWell>
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

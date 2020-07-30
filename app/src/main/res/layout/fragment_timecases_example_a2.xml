@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/pure_black"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pure_black">
 
 
     <com.beardedhen.androidbootstrap.BootstrapLabel
@@ -23,25 +23,25 @@
 
     <com.beardedhen.androidbootstrap.BootstrapWell
 
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_gravity="center"
-    android:layout_margin="8dp"
-    app:bootstrapSize="md"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="1.0"
-    app:layout_constraintVertical_bias="0.25">
-
-    <TextView
-        android:id="@+id/info_timecases"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Haber (Bildirme) Kipleri, zaman anlamı taşıyan kiplerdir. Bu kiplerle çekimlenen fiillerin gerçekleşme zamanı bellidir." />
-</com.beardedhen.androidbootstrap.BootstrapWell>
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        app:bootstrapSize="md"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25">
+
+        <TextView
+            android:id="@+id/info_timecases"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Haber (Bildirme) Kipleri, zaman anlamı taşıyan kiplerdir. Bu kiplerle çekimlenen fiillerin gerçekleşme zamanı bellidir." />
+    </com.beardedhen.androidbootstrap.BootstrapWell>
 
     <com.beardedhen.androidbootstrap.BootstrapWell
 
@@ -68,22 +68,19 @@
 
     <com.beardedhen.androidbootstrap.BootstrapButton
         android:id="@+id/btn_timecases_next"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sonraki"
         app:bootstrapBrand="success"
         app:bootstrapSize="lg"
         app:buttonMode="regular"
-        app:showOutline="false"
-        app:roundedCorners="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.80"
-        />
-
-
+        app:roundedCorners="true"
+        app:showOutline="false" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

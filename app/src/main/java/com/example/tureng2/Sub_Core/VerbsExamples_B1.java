@@ -1,7 +1,6 @@
 package com.example.tureng2.Sub_Core;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,24 +20,19 @@ public class VerbsExamples_B1 extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_verbs_examples_b1,container,false);
+        View view = inflater.inflate(R.layout.fragment_verbs_examples_b1, container, false);
 
-        try {
-            recyclerView = view.findViewById(R.id.recyclerView);
+        recyclerView = view.findViewById(R.id.recyclerView);
 
 
-            NounVerbDataRecyclerViewAdapter nounVerbDataRecyclerViewAdapter = new NounVerbDataRecyclerViewAdapter(getActivity(),NounVerbDataB1.getData(false));
+        NounVerbDataRecyclerViewAdapter nounVerbDataRecyclerViewAdapter = new NounVerbDataRecyclerViewAdapter(getActivity(), NounVerbDataB1.getData(false));
 
-            recyclerView.setAdapter(nounVerbDataRecyclerViewAdapter);
+        recyclerView.setAdapter(nounVerbDataRecyclerViewAdapter);
 
-            LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity());
-            linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
-            recyclerView.setLayoutManager(linearLayoutManager);
-        }
-        catch (Exception e)
-        {
-            Log.e("SubCore/Verbs","OnCreate Exception", e);
-        }
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity());
+        linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
+        recyclerView.setLayoutManager(linearLayoutManager);
+
         return view;
     }
 }

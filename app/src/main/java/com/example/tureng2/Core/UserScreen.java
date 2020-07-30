@@ -34,22 +34,16 @@ public class UserScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_userscreen);
 
-        try {
-            TypefaceProvider.registerDefaultIconSets();
+        TypefaceProvider.registerDefaultIconSets();
 
-            email = findViewById(R.id.email);
-            score = findViewById(R.id.score);
-            sendMail = findViewById(R.id.btn_sendEmail);
+        email = findViewById(R.id.email);
+        score = findViewById(R.id.score);
+        sendMail = findViewById(R.id.btn_sendEmail);
 
-            email.setVisibility(View.INVISIBLE);
-            score.setVisibility(View.INVISIBLE);
+        email.setVisibility(View.INVISIBLE);
+        score.setVisibility(View.INVISIBLE);
 
-            getInfo();
-        }
-        catch (Exception e)
-        {
-            Log.e("Core/UserScreen","OnCreate Exception", e);
-        }
+        getInfo();
     }
 
     public void getInfo() {
@@ -69,18 +63,12 @@ public class UserScreen extends AppCompatActivity {
                             score.setText(scorex);
                             email.setVisibility(View.VISIBLE);
                             score.setVisibility(View.VISIBLE);
-                        } else {
-                            //Log.d("FirestoreDemo", "No such document");
                         }
-                    } else {
-                        //Log.d("FirestoreDemo", "get failed with ", task.getException());
                     }
                 }
             });
-        }
-        catch (Exception e)
-        {
-            Log.e("Core/UserScreen","GetInfo Exception", e);
+        } catch (Exception e) {
+            Log.e("Core/UserScreen", "GetInfo Exception", e);
         }
     }
 
@@ -103,8 +91,7 @@ public class UserScreen extends AppCompatActivity {
             startActivity(Intent.createChooser(emailIntent, "Send mail..."));
             finish();
             Log.i("Mail gönderildi", "");
-        }
-        catch (android.content.ActivityNotFoundException ex) {
+        } catch (android.content.ActivityNotFoundException ex) {
             Toast.makeText(this, "E-Mail istemcisi yüklü değil.", Toast.LENGTH_SHORT).show();
         }
     }

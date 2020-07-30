@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/pure_black">
@@ -10,11 +9,11 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/mainSectionCS"
         android:layout_width="match_parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_height="match_parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <com.beardedhen.androidbootstrap.BootstrapEditText
             android:id="@+id/answer3"
@@ -135,7 +134,6 @@
             app:roundedCorners="false" />
 
 
-
         <com.beardedhen.androidbootstrap.BootstrapButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -239,7 +237,6 @@
             app:layout_constraintVertical_bias="0.402" />
 
 
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <com.beardedhen.androidbootstrap.BootstrapWell
@@ -259,14 +256,10 @@
         <TextView
             android:id="@+id/allAnswersResult"
             android:layout_width="wrap_content"
-            android:visibility="gone"
             android:layout_height="wrap_content"
-            android:gravity="center" />
+            android:gravity="center"
+            android:visibility="gone" />
     </com.beardedhen.androidbootstrap.BootstrapWell>
-
-
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

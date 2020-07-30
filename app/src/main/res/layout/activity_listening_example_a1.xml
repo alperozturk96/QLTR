@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@color/pure_black"
     android:layout_height="match_parent"
+    android:background="@color/pure_black"
     tools:context=".Sub_Core.ListeningExampleA1">
 
 
@@ -32,21 +32,21 @@
         android:layout_gravity="center"
         android:layout_margin="8dp"
         app:bootstrapSize="md"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.27">
 
         <TextView
             android:id="@+id/gokhan"
-            android:onClick="listen"
-            app:layout_constraintVertical_bias="0.27"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Hello. My name is Gökhan. I am (I’m) 11 years old and I am a student. I am from İstanbul. I like reading books." />
+            android:onClick="listen"
+            android:text="Hello. My name is Gökhan. I am (I’m) 11 years old and I am a student. I am from İstanbul. I like reading books."
+            app:layout_constraintVertical_bias="0.27" />
     </com.beardedhen.androidbootstrap.BootstrapWell>
 
     <com.beardedhen.androidbootstrap.BootstrapWell
@@ -55,21 +55,21 @@
         android:layout_gravity="center"
         android:layout_margin="8dp"
         app:bootstrapSize="md"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.521">
 
         <TextView
             android:id="@+id/altan"
-            android:onClick="listen"
-            app:layout_constraintVertical_bias="0.521"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Hello! I am Altan. I recently graduated in philosophy, they were 4 difficult years but it was worth it! We knew each other with Sally at the debate group’s party last year and we got along really well. The reason should be that we both like techno music. And you ?" />
+            android:onClick="listen"
+            android:text="Hello! I am Altan. I recently graduated in philosophy, they were 4 difficult years but it was worth it! We knew each other with Sally at the debate group’s party last year and we got along really well. The reason should be that we both like techno music. And you ?"
+            app:layout_constraintVertical_bias="0.521" />
     </com.beardedhen.androidbootstrap.BootstrapWell>
 
 
@@ -79,21 +79,21 @@
         android:layout_gravity="center"
         android:layout_margin="8dp"
         app:bootstrapSize="md"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.823">
 
         <TextView
             android:id="@+id/ali"
-            android:onClick="listen"
-            app:layout_constraintVertical_bias="0.823"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="My name is Ali. I am from Istanbul and I live there. I was born in Kartal. I am 24 years old. I study at university for getting my master’s degree. I studied international relations. I like reading and listening to music. Also, swimming… I live with my mom and dad. My best friends are Ilgaz and Simge." />
+            android:onClick="listen"
+            android:text="My name is Ali. I am from Istanbul and I live there. I was born in Kartal. I am 24 years old. I study at university for getting my master’s degree. I studied international relations. I like reading and listening to music. Also, swimming… I live with my mom and dad. My best friends are Ilgaz and Simge."
+            app:layout_constraintVertical_bias="0.823" />
     </com.beardedhen.androidbootstrap.BootstrapWell>
 
     <com.beardedhen.androidbootstrap.BootstrapLabel

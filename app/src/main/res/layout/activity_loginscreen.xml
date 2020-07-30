@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@color/pure_black"
     android:layout_height="match_parent"
+    android:background="@color/pure_black"
     tools:context=".Authentication.Login">
 
 
@@ -25,7 +25,7 @@
         android:layout_width="250dp"
         android:layout_height="30dp"
         android:hint="Lütfen E-Mail Adresi Giriniz"
-        android:text="lixt1@outlook.com"
+        android:text="coolnext4@gmail.com"
         app:bootstrapBrand="info"
         app:bootstrapSize="md"
         app:layout_constraintBottom_toBottomOf="parent"

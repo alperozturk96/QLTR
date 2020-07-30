@@ -8,7 +8,6 @@
     tools:context=".Sub_Core.MultipleChoiceExerciseA1">
 
 
-
     <ImageView
         android:id="@+id/img_carss"
         android:layout_width="186dp"
@@ -39,16 +38,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="right"
-            android:textSize="14sp"
-            android:text="Yukarıdaki resmin doğru yazım şekli nedir ?" />
+            android:text="Yukarıdaki resmin doğru yazım şekli nedir ?"
+            android:textSize="14sp" />
     </com.beardedhen.androidbootstrap.BootstrapWell>
 
     <com.beardedhen.androidbootstrap.BootstrapButton
         android:id="@+id/backHome"
         android:layout_width="92dp"
         android:layout_height="49dp"
-        app:bootstrapBrand="success"
         android:onClick="goHome"
+        app:bootstrapBrand="success"
         app:bootstrapSize="lg"
         app:buttonMode="regular"
         app:layout_constraintBottom_toBottomOf="parent"

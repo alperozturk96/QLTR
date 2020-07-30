@@ -10,7 +10,6 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
 
-
     <application
         android:allowBackup="true"
         android:icon="@drawable/applogo"
@@ -18,12 +17,10 @@
         android:roundIcon="@drawable/applogo_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <uses-library android:name="android.test.base"
-             />
-        <uses-library android:name="android.test.mock"
-             />
-        <uses-library android:name="android.test.runner"
-            />
+        <uses-library android:name="android.test.base" />
+        <uses-library android:name="android.test.mock" />
+        <uses-library android:name="android.test.runner" />
+
         <activity android:name=".Sub_Core.FillParagraphGapsExerciseA2"></activity>
         <activity android:name=".Sub_Core.FillGapsExerciseA2" />
         <activity android:name=".Sub_Core.MultipleChoiceExerciseA2" />

@@ -26,56 +26,41 @@ public class LayoutManager extends AppCompatActivity {
 
     private Context context;
 
-    public LayoutManager(@NonNull Context context)
-    {
+    public LayoutManager(@NonNull Context context) {
         this.context = context;
     }
 
-    public void setInfoTextView(String getInfo, int start, int end, BootstrapButton bt)
-    {
+    public void setInfoTextView(String getInfo, int start, int end, BootstrapButton bt) {
         try {
             SpannableString sp = new SpannableString(getInfo);
 
-            //ForegroundColorSpan fcsBlue = new ForegroundColorSpan(Color.BLUE);
             ForegroundColorSpan fcsRed = new ForegroundColorSpan(Color.BLACK);
-            //ForegroundColorSpan fcsWhite = new ForegroundColorSpan(Color.WHITE);
-
-            //BackgroundColorSpan bcsWhite = new BackgroundColorSpan(Color.RED);
 
             StyleSpan boldSpan = new StyleSpan(Typeface.BOLD);
             RelativeSizeSpan largeSizeText = new RelativeSizeSpan(1.3f);
 
 
-            sp.setSpan(fcsRed,start,end, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
-            // sp.setSpan(bcsWhite,17,24,Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
-            sp.setSpan(boldSpan,start,end,Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
-            sp.setSpan(largeSizeText,start,end,Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+            sp.setSpan(fcsRed, start, end, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+            sp.setSpan(boldSpan, start, end, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+            sp.setSpan(largeSizeText, start, end, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
 
             bt.setText(sp);
-        }
-        catch (Exception e)
-        {
-            Log.e("Core/LayoutManager","Set Info TextView Exception", e);
+        } catch (Exception e) {
+            Log.e("Core/LayoutManager", "Set Info TextView Exception", e);
         }
     }
 
-    public void hideOrShowLayout(int id, boolean choose)
-    {
+    public void hideOrShowLayout(int id, boolean choose) {
         try {
-            ConstraintLayout temp = ((Activity)context).findViewById(id);
+            ConstraintLayout temp = ((Activity) context).findViewById(id);
 
-            if(!choose)
-            {
+            if (!choose) {
                 temp.setVisibility(GONE);
-            }
-            else
-            {
+            } else {
                 temp.setVisibility(VISIBLE);
             }
-        }
-        catch (Exception e)
-        {
-            Log.e("Core/LayoutManager","HideOrShowLayout Exception", e);
+        } catch (Exception e) {
+            Log.e("Core/LayoutManager", "HideOrShowLayout Exception", e);
         }
     }
 }

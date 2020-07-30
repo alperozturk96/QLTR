@@ -2,23 +2,21 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
     android:id="@+id/practise_levela1"
-    android:background="@color/pure_black"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/pure_black"
     tools:context=".Core.PractiseA1">
 
-    <androidx.drawerlayout.widget.DrawerLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
+    <androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/drawer_layout"
-        android:background="@color/pure_black"
-        tools:openDrawer="start"
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/pure_black"
         android:fitsSystemWindows="true"
-        android:layout_height="match_parent">
-
+        tools:openDrawer="start">
 
 
         <com.google.android.material.navigation.NavigationView
@@ -27,8 +25,8 @@
             android:layout_height="match_parent"
             android:layout_gravity="start"
             android:background="@color/pure_black"
-            app:itemTextColor="@color/whiteCardColor"
             app:headerLayout="@layout/header"
+            app:itemTextColor="@color/whiteCardColor"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -69,20 +67,20 @@
             android:layout_gravity="center"
             android:layout_margin="8dp"
             app:bootstrapSize="md"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.30">
 
             <TextView
                 android:id="@+id/question1"
-                app:layout_constraintVertical_bias="0.30"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="a) Merhaba,benim adım Ahmet. Ben 60 yaşındayım. Eşim ev hanımı. Ben Türküm. Ben Bursalıyım. Emekliyim." />
+                android:text="a) Merhaba,benim adım Ahmet. Ben 60 yaşındayım. Eşim ev hanımı. Ben Türküm. Ben Bursalıyım. Emekliyim."
+                app:layout_constraintVertical_bias="0.30" />
         </com.beardedhen.androidbootstrap.BootstrapWell>
 
         <com.beardedhen.androidbootstrap.BootstrapWell
@@ -91,19 +89,19 @@
             android:layout_gravity="center"
             android:layout_margin="8dp"
             app:bootstrapSize="md"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.4">
 
             <TextView
-                app:layout_constraintVertical_bias="0.4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="b) Merhaba, benim adım John. 44 yaşındayım. Ben doktorum. Kenyalıyım. Evliyim. Eşim öğretmen. 2 kızım var." />
+                android:text="b) Merhaba, benim adım John. 44 yaşındayım. Ben doktorum. Kenyalıyım. Evliyim. Eşim öğretmen. 2 kızım var."
+                app:layout_constraintVertical_bias="0.4" />
         </com.beardedhen.androidbootstrap.BootstrapWell>
 
 
@@ -113,19 +111,19 @@
             android:layout_gravity="center"
             android:layout_margin="8dp"
             app:bootstrapSize="md"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.5">
 
             <TextView
-                app:layout_constraintVertical_bias="0.5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="c) Merhaba, benim adım Aryan. Ben İranlıyım. 33 yaşındayım. Ben avukatım. Bekârım." />
+                android:text="c) Merhaba, benim adım Aryan. Ben İranlıyım. 33 yaşındayım. Ben avukatım. Bekârım."
+                app:layout_constraintVertical_bias="0.5" />
         </com.beardedhen.androidbootstrap.BootstrapWell>
 
         <com.beardedhen.androidbootstrap.BootstrapWell
@@ -134,19 +132,19 @@
             android:layout_gravity="center"
             android:layout_margin="8dp"
             app:bootstrapSize="md"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.6">
 
             <TextView
-                app:layout_constraintVertical_bias="0.6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="ç) Merhaba, benim adım Yong. Ben Koreliyim. 22 yaşındayım. Öğrenciyim. Bekârım." />
+                android:text="ç) Merhaba, benim adım Yong. Ben Koreliyim. 22 yaşındayım. Öğrenciyim. Bekârım."
+                app:layout_constraintVertical_bias="0.6" />
         </com.beardedhen.androidbootstrap.BootstrapWell>
 
 
@@ -156,23 +154,22 @@
             android:layout_gravity="center"
             android:layout_margin="8dp"
             app:bootstrapSize="md"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.05"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.7">
 
             <TextView
                 android:id="@+id/who_answer1"
-                android:onClick="practiseWhoAreThey"
-                app:layout_constraintHorizontal_bias="0.05"
-                app:layout_constraintVertical_bias="0.7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:onClick="practiseWhoAreThey"
                 android:text="a) --> (   )"
-                />
+                app:layout_constraintHorizontal_bias="0.05"
+                app:layout_constraintVertical_bias="0.7" />
         </com.beardedhen.androidbootstrap.BootstrapWell>
 
         <com.beardedhen.androidbootstrap.BootstrapWell
@@ -181,23 +178,22 @@
             android:layout_gravity="center"
             android:layout_margin="8dp"
             app:bootstrapSize="md"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.350"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.7">
 
             <TextView
                 android:id="@+id/who_answer2"
-                android:onClick="practiseWhoAreThey"
-                app:layout_constraintHorizontal_bias="0.350"
-                app:layout_constraintVertical_bias="0.7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:onClick="practiseWhoAreThey"
                 android:text="b) --> (   )"
-                />
+                app:layout_constraintHorizontal_bias="0.350"
+                app:layout_constraintVertical_bias="0.7" />
         </com.beardedhen.androidbootstrap.BootstrapWell>
 
 
@@ -207,23 +203,22 @@
             android:layout_gravity="center"
             android:layout_margin="8dp"
             app:bootstrapSize="md"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.650"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.7">
 
             <TextView
                 android:id="@+id/who_answer3"
-                android:onClick="practiseWhoAreThey"
-                app:layout_constraintHorizontal_bias="0.650"
-                app:layout_constraintVertical_bias="0.7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:onClick="practiseWhoAreThey"
                 android:text="c) --> (   )"
-                />
+                app:layout_constraintHorizontal_bias="0.650"
+                app:layout_constraintVertical_bias="0.7" />
         </com.beardedhen.androidbootstrap.BootstrapWell>
 
 
@@ -233,23 +228,22 @@
             android:layout_gravity="center"
             android:layout_margin="8dp"
             app:bootstrapSize="md"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.950"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.7">
 
             <TextView
                 android:id="@+id/who_answer4"
-                android:onClick="practiseWhoAreThey"
-                app:layout_constraintVertical_bias="0.7"
-                app:layout_constraintHorizontal_bias="0.950"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:onClick="practiseWhoAreThey"
                 android:text="ç) --> (   )"
-                />
+                app:layout_constraintHorizontal_bias="0.950"
+                app:layout_constraintVertical_bias="0.7" />
         </com.beardedhen.androidbootstrap.BootstrapWell>
 
         <ImageView
@@ -276,15 +270,13 @@
         app:layout_constraintTop_toTopOf="parent">
 
 
-
-
         <com.beardedhen.androidbootstrap.BootstrapButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:bootstrapBrand="secondary"
             android:gravity="center"
             android:onClick="whoaretheyOnClick"
             android:text="KİM BU ?"
+            app:bootstrapBrand="secondary"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
@@ -295,10 +287,10 @@
         <com.beardedhen.androidbootstrap.BootstrapButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:bootstrapBrand="secondary"
-            android:onClick="writeAnswerOnClick"
             android:gravity="center"
+            android:onClick="writeAnswerOnClick"
             android:text="YAZILI SORULAR"
+            app:bootstrapBrand="secondary"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
@@ -309,10 +301,10 @@
         <com.beardedhen.androidbootstrap.BootstrapButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:bootstrapBrand="secondary"
-            android:onClick="multipleChoiceOnClick"
             android:gravity="center"
+            android:onClick="multipleChoiceOnClick"
             android:text="ÇOKTAN SEÇMELİ SORULAR"
+            app:bootstrapBrand="secondary"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
@@ -349,9 +341,9 @@
             android:layout_width="133dp"
             android:layout_height="88dp"
             android:onClick="numbersMatchesOnClick"
-            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.92"

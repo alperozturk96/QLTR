@@ -2,7 +2,6 @@ package com.example.tureng2.Core;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
@@ -16,7 +15,6 @@ import static com.example.tureng2.Authentication.Login.loggedScore;
 public class Speech extends MPAs {
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,42 +22,21 @@ public class Speech extends MPAs {
     }
 
     public void speech_levela1OnClick(View view) {
-        try {
-            Intent intent = new Intent(this, SpeechA1.class);
-            startActivity(intent);
-        }
-        catch (Exception e)
-        {
-            Log.e("Core/Speech","Intent Exception", e);
-        }
+        Intent intent = new Intent(this, SpeechA1.class);
+        startActivity(intent);
     }
 
     public void speech_levela2OnClick(View view) {
-        try {
-            if(loggedScore > 25)
-            {
-                Intent intent = new Intent(this, SpeechA2.class);
-                startActivity(intent);
-            }
-            else
-            {
-                Toast.makeText(getApplicationContext(), "Yeterli puanınız olmadığı için bu bölüme geçemezsiniz.", Toast.LENGTH_SHORT).show();
-            }
-        }
-        catch (Exception e)
-        {
-            Log.e("Core/Speech","Intent Exception", e);
+        if (loggedScore > 25) {
+            Intent intent = new Intent(this, SpeechA2.class);
+            startActivity(intent);
+        } else {
+            Toast.makeText(getApplicationContext(), "Yeterli puanınız olmadığı için bu bölüme geçemezsiniz.", Toast.LENGTH_SHORT).show();
         }
     }
 
     public void dailytalks(View view) {
-        try {
-            Intent intent = new Intent(this, DailyTalks.class);
-            startActivity(intent);
-        }
-        catch (Exception e)
-        {
-            Log.e("Core/Speech","Intent Exception", e);
-        }
+        Intent intent = new Intent(this, DailyTalks.class);
+        startActivity(intent);
     }
 }

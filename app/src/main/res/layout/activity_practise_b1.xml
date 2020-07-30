@@ -8,17 +8,15 @@
     android:background="@color/pure_black"
     tools:context=".Core.PractiseB1">
 
-    <androidx.drawerlayout.widget.DrawerLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
+    <androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/drawer_layout"
-        android:background="@color/pure_black"
-        tools:openDrawer="start"
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/pure_black"
         android:fitsSystemWindows="true"
-        android:layout_height="match_parent">
-
+        tools:openDrawer="start">
 
 
         <com.google.android.material.navigation.NavigationView
@@ -27,8 +25,8 @@
             android:layout_height="match_parent"
             android:layout_gravity="start"
             android:background="@color/pure_black"
-            app:itemTextColor="@color/whiteCardColor"
             app:headerLayout="@layout/header"
+            app:itemTextColor="@color/whiteCardColor"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -43,64 +41,60 @@
         android:layout_height="wrap_content"
         android:onClick="adverbexerciseOnClick"
         android:text="Boşluk Doldurma ( Fiil ) "
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:bootstrapBrand="secondary"
         app:bootstrapHeading="h4"
-        app:roundedCorners="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.8"
-        />
+        app:roundedCorners="false" />
 
     <com.beardedhen.androidbootstrap.BootstrapLabel
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="trueFalseOnClick"
         android:text="Doğru Yanlış"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:bootstrapBrand="secondary"
         app:bootstrapHeading="h4"
-        app:roundedCorners="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.6"
-        />
+        app:roundedCorners="false" />
 
     <com.beardedhen.androidbootstrap.BootstrapLabel
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="emergencyOnClick"
         android:text="ACİL Numaralar ?"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:bootstrapBrand="secondary"
         app:bootstrapHeading="h4"
-        app:roundedCorners="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.2"
-        />
+        app:roundedCorners="false" />
 
     <com.beardedhen.androidbootstrap.BootstrapLabel
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="fillgapsOnClick"
         android:text="Boşluk Doldurma"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:bootstrapBrand="secondary"
         app:bootstrapHeading="h4"
-        app:roundedCorners="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.4"
-        />
+        app:roundedCorners="false" />
 
     <androidx.constraintlayout.widget.Group
         android:id="@+id/groupMain"

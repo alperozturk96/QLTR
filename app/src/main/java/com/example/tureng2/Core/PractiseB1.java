@@ -1,7 +1,6 @@
 package com.example.tureng2.Core;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
@@ -32,118 +31,61 @@ public class PractiseB1 extends AppCompatActivity implements NavigationView.OnNa
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_practise_b1);
 
-        try {
-            mainScreen = findViewById(R.id.groupMain);
+        mainScreen = findViewById(R.id.groupMain);
 
-            db = new DbOperations(PractiseB1.this);
-            sideMenu = new SideMenu(PractiseB1.this);
-            sideMenu.createDrawer();
-        }
-        catch (Exception e)
-        {
-            Log.e("Core/PractiseB1","OnCreate Exception", e);
-        }
+        db = new DbOperations(PractiseB1.this);
+        sideMenu = new SideMenu(PractiseB1.this);
+        sideMenu.createDrawer();
     }
 
-    public void prepareFragment()
-    {
-        try {
-            mainScreen.setVisibility(View.GONE);
-            fm = getSupportFragmentManager();
-        }
-        catch (Exception e)
-        {
-            Log.e("Core/PractiseB1","Prepare Fragment Exception", e);
-        }
+    public void prepareFragment() {
+        mainScreen.setVisibility(View.GONE);
+        fm = getSupportFragmentManager();
     }
 
-    public void trueFalseOnClick(View view)
-    {
+    public void trueFalseOnClick(View view) {
+        prepareFragment();
+        TrueFalseExercise_B1 fragment_truefalse = new TrueFalseExercise_B1();
+        fm.beginTransaction().replace(R.id.practise_levelb1, fragment_truefalse).commit();
+    }
+
+    public void fillgapsOnClick(View view) {
         prepareFragment();
 
-        try {
-            TrueFalseExercise_B1 fragment_truefalse = new TrueFalseExercise_B1();
-            fm.beginTransaction().replace(R.id.practise_levelb1, fragment_truefalse).commit();
-        }
-        catch(Exception e)
-        {
-            Log.e("Core/PractiseB1","Fragment Exception", e);
-        }
+        FillGapsExerciseB1 fragment_fillgaps = new FillGapsExerciseB1();
+        fm.beginTransaction().replace(R.id.practise_levelb1, fragment_fillgaps).commit();
     }
 
-    public void fillgapsOnClick(View view)
-    {
+    public void adverbexerciseOnClick(View view) {
         prepareFragment();
+        AdverbExerciseB1 fragment_adverbexercise = new AdverbExerciseB1();
+        fm.beginTransaction().replace(R.id.practise_levelb1, fragment_adverbexercise).commit();
+    }
 
-        try {
-            FillGapsExerciseB1 fragment_fillgaps = new FillGapsExerciseB1();
-            fm.beginTransaction().replace(R.id.practise_levelb1, fragment_fillgaps).commit();
-        }
-        catch (Exception e)
-        {
-            Log.e("Core/PractiseB1","Fragment Exception", e);
+    public void sendAnswer(View view) {
+        switch (view.getId()) {
+            case (R.id.answer12):
+            case (R.id.answer18):
+            case (R.id.answer23):
+            case (R.id.answer32):
+            case (R.id.answer36):
+            case (R.id.answer46):
+                Toast.makeText(this, "Tebrikler, doğru cevap verdiniz.", Toast.LENGTH_SHORT).show();
+                break;
+            default:
+                Toast.makeText(this, "Yanlış cevap verdiniz.", Toast.LENGTH_SHORT).show();
         }
     }
 
-    public void adverbexerciseOnClick(View view)
-    {
+    public void emergencyOnClick(View view) {
         prepareFragment();
-
-        try {
-            AdverbExerciseB1 fragment_adverbexercise = new AdverbExerciseB1();
-            fm.beginTransaction().replace(R.id.practise_levelb1, fragment_adverbexercise).commit();
-        }
-        catch (Exception e)
-        {
-            Log.e("Core/PractiseB1","Fragment Exception", e);
-        }
-    }
-
-    public void sendAnswer(View view)
-    {
-        try {
-            switch (view.getId()) {
-                case(R.id.answer12):
-                case(R.id.answer18):
-                case(R.id.answer23):
-                case(R.id.answer32):
-                case(R.id.answer36):
-                case(R.id.answer46):
-                    Toast.makeText(this, "Tebrikler, doğru cevap verdiniz.", Toast.LENGTH_SHORT).show();
-                    break;
-                default: Toast.makeText(this, "Yanlış cevap verdiniz.", Toast.LENGTH_SHORT).show();
-            }
-        }
-        catch (Exception e)
-        {
-            Log.e("Core/PractiseB1","Send Answer Exception", e);
-        }
-    }
-
-    public void emergencyOnClick(View view)
-    {
-        prepareFragment();
-
-        try {
-            EmergencyExerciseB1 fragment_emergencyExerciseB1 = new EmergencyExerciseB1();
-            fm.beginTransaction().replace(R.id.practise_levelb1, fragment_emergencyExerciseB1).commit();
-        }
-        catch (Exception e)
-        {
-            Log.e("Core/PractiseB1","Fragment Exception", e);
-        }
+        EmergencyExerciseB1 fragment_emergencyExerciseB1 = new EmergencyExerciseB1();
+        fm.beginTransaction().replace(R.id.practise_levelb1, fragment_emergencyExerciseB1).commit();
     }
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-        try {
-            sideMenu.onNavigationItemSelected(menuItem);
-            return true;
-        }
-        catch (Exception e)
-        {
-            Log.e("Core/PractiseB1","Navigation Item Selected Exception", e);
-            return false;
-        }
+        sideMenu.onNavigationItemSelected(menuItem);
+        return true;
     }
 }

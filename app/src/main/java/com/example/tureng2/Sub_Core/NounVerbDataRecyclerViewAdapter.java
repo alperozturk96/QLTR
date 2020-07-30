@@ -20,8 +20,7 @@ public class NounVerbDataRecyclerViewAdapter extends RecyclerView.Adapter<NounVe
     LayoutInflater inflater;
 
 
-    public NounVerbDataRecyclerViewAdapter(Context context, ArrayList<NounVerbDataB1> data)
-    {
+    public NounVerbDataRecyclerViewAdapter(Context context, ArrayList<NounVerbDataB1> data) {
         inflater = LayoutInflater.from(context);
         mDataList = data;
     }
@@ -29,19 +28,17 @@ public class NounVerbDataRecyclerViewAdapter extends RecyclerView.Adapter<NounVe
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = inflater.inflate(R.layout.list_info_b1,parent,false); // xml'den çevirip java'ya dönüştürüpü view'in içine atıyor. false değeri ise hepsini direk atama çünkü recycler view
+        View view = inflater.inflate(R.layout.list_info_b1, parent, false); // xml'den çevirip java'ya dönüştürüpü view'in içine atıyor. false değeri ise hepsini direk atama çünkü recycler view
         //anlık oluşturuyor.
 
-        MyViewHolder holder = new MyViewHolder(view);
-
-        return holder;
+        return new MyViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
 
         NounVerbDataB1 nounVerbDataB1 = mDataList.get(position);
-        holder.setData(nounVerbDataB1,position);
+        holder.setData(nounVerbDataB1, position);
 
     }
 
@@ -50,7 +47,7 @@ public class NounVerbDataRecyclerViewAdapter extends RecyclerView.Adapter<NounVe
         return mDataList.size();
     }
 
-    class MyViewHolder extends RecyclerView.ViewHolder{
+    static class MyViewHolder extends RecyclerView.ViewHolder {
 
         TextView mNoun;
 
@@ -60,8 +57,7 @@ public class NounVerbDataRecyclerViewAdapter extends RecyclerView.Adapter<NounVe
             mNoun = itemView.findViewById(R.id.tv_info);
         }
 
-        public void setData(NounVerbDataB1 nounVerbDataB1, int position)
-        {
+        public void setData(NounVerbDataB1 nounVerbDataB1, int position) {
             this.mNoun.setText(nounVerbDataB1.getNouns());
         }
     }

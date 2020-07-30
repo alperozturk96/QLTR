@@ -4,7 +4,6 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.graphics.Color;
-import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
@@ -21,102 +20,60 @@ public class GlobalAlertDialog extends AppCompatActivity {
     private Context mContext;
     private DbOperations db;
 
-    public GlobalAlertDialog(Context context)
-    {
+    public GlobalAlertDialog(Context context) {
         this.mContext = context;
     }
 
-    public void controlAnswerandChangeText(int choose, int trueAnswer, TextView temp, Context context, String answer)
-    {
-        try {
-            db = new DbOperations(context);
+    public void controlAnswerandChangeText(int choose, int trueAnswer, TextView temp, Context context, String answer) {
+        db = new DbOperations(context);
 
-            if(choose == trueAnswer)
-            {
-                db.increaseScore(3);
-                temp.setText(answer);
-            }
-            else
-            {
-                db.wrongAnswer();
-                temp.setText(answer);
-                temp.setTextSize(16);
-                temp.setTextColor(Color.rgb(180,0,0));
-            }
-        }
-        catch (Exception e)
-        {
-            Log.e("Core/GAD","GAD Exception", e);
+        if (choose == trueAnswer) {
+            db.increaseScore(3);
+            temp.setText(answer);
+        } else {
+            db.wrongAnswer();
+            temp.setText(answer);
+            temp.setTextSize(16);
+            temp.setTextColor(Color.rgb(180, 0, 0));
         }
     }
 
 
-    public void controlAnswer(int choose, int trueAnswer,TextView temp,Context context)
-    {
-        try {
-            db = new DbOperations(context);
+    public void controlAnswer(int choose, int trueAnswer, TextView temp, Context context) {
+        db = new DbOperations(context);
 
-            if(choose == trueAnswer)
-            {
-                db.increaseScore(3);
-                setCorrectTextView(temp);
-            }
-            else
-            {
-                db.wrongAnswer();
-                setWrongTextView(temp);
-            }
-        }
-        catch (Exception e)
-        {
-            Log.e("Core/GAD","GAD Exception", e);
+        if (choose == trueAnswer) {
+            db.increaseScore(3);
+            setCorrectTextView(temp);
+        } else {
+            db.wrongAnswer();
+            setWrongTextView(temp);
         }
     }
 
-    public void showInfo(View view,String temp,String tempTitle,Context context)
-    {
-        try {
-            dialogBuilder = new androidx.appcompat.app.AlertDialog.Builder(context);
-            dialogBuilder.setTitle(tempTitle)
-                    .setMessage(temp)
-                    .setCancelable(false)
-                    .setPositiveButton("Tamam", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                        }
-                    });
-            alertDialog = dialogBuilder.create();
-            alertDialog.show();
-        }
-        catch (Exception e)
-        {
-            Log.e("Core/GAD","GAD Exception", e);
-        }
+    public void showInfo(View view, String temp, String tempTitle, Context context) {
+        dialogBuilder = new androidx.appcompat.app.AlertDialog.Builder(context);
+        dialogBuilder.setTitle(tempTitle)
+                .setMessage(temp)
+                .setCancelable(false)
+                .setPositiveButton("Tamam", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                    }
+                });
+        alertDialog = dialogBuilder.create();
+        alertDialog.show();
     }
 
-    public void setWrongTextView(TextView temp)
-    {
-        try {
-            temp.setText("❌");
-            temp.setTextColor(Color.rgb(180,0,0));
-            temp.setTextSize(18);
-        }
-        catch (Exception e)
-        {
-            Log.e("Core/GAD","GAD Exception", e);
-        }
+    public void setWrongTextView(TextView temp) {
+        temp.setText("❌");
+        temp.setTextColor(Color.rgb(180, 0, 0));
+        temp.setTextSize(18);
     }
 
-    public void setCorrectTextView(TextView temp)
-    {
-        try {
-            temp.setText("✓");
-            temp.setTextColor(Color.rgb(0,180,0));
-            temp.setTextSize(18);
-        }
-        catch (Exception e)
-        {
-            Log.e("Core/GAD","GAD Exception", e);
-        }
+    public void setCorrectTextView(TextView temp) {
+        temp.setText("✓");
+        temp.setTextColor(Color.rgb(0, 180, 0));
+        temp.setTextSize(18);
     }
 }

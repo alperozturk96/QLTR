@@ -16,40 +16,31 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 
-
 public abstract class MPAs extends AppCompatActivity {
 
     private static MediaPlayer mediaPlayer = new MediaPlayer();
 
 
-
     public final void mpstart(String mydata) {
         try {
-            if (mediaPlayer.isPlaying() == true) {
+            if (mediaPlayer.isPlaying()) {
                 mpPauseStop();
-                mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
-                mediaPlayer = MediaPlayer.create(this, Uri.parse(mydata));
                 //mediaPlayer.setDataSource(getApplicationContext(), Uri.parse(mydata));
                 //mediaPlayer.setOnPreparedListener(this);
-                mediaPlayer.isPlaying();
                 //mediaPlayer.prepare();
-                mediaPlayer.start();
             } else {
-                mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
-                mediaPlayer = MediaPlayer.create(this, Uri.parse(mydata));
                 //mediaPlayer.setDataSource(getApplicationContext(),mydata);
                 //mediaPlayer.setOnPreparedListener(this);
-                mediaPlayer.isPlaying();
                 //mediaPlayer.prepare();
-                mediaPlayer.start();
             }
-        }
-        catch (Exception e)
-        {
-            Log.e("MediaPlayer","MediaPlayer Start Exception", e);
+            mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
+            mediaPlayer = MediaPlayer.create(this, Uri.parse(mydata));
+            mediaPlayer.isPlaying();
+            mediaPlayer.start();
+        } catch (Exception e) {
+            Log.e("MediaPlayer", "MediaPlayer Start Exception", e);
         }
     }
-
 
 
     public final void mpPauseStop() {
@@ -58,10 +49,8 @@ public abstract class MPAs extends AppCompatActivity {
             mediaPlayer.stop();
             mediaPlayer.release();
             mediaPlayer = new MediaPlayer();
-        }
-        catch (Exception e)
-        {
-            Log.e("MediaPlayer","MediaPlayer Stop Exception", e);
+        } catch (Exception e) {
+            Log.e("MediaPlayer", "MediaPlayer Stop Exception", e);
         }
     }
 
@@ -73,34 +62,24 @@ public abstract class MPAs extends AppCompatActivity {
         try {
             final ListView listView = findViewById(id);
 
-            listenActivities(addressList,headerList,listView);
-        }
-        catch (Exception e)
-        {
-            Log.e("MediaPlayer","OnCreate Exception", e);
+            listenActivities(addressList, headerList, listView);
+        } catch (Exception e) {
+            Log.e("MediaPlayer", "OnCreate Exception", e);
         }
     }
 
     public boolean isConnected() {
-        try {
-            ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-            NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
-            if (networkInfo != null && networkInfo.isConnected() == true) {
-                return true;
-            } else {
-                Toast.makeText(this, "İnternet bağlatısı bulunamadı.", Toast.LENGTH_SHORT).show();
-                return false;
-            }
-        }
-        catch (Exception e)
-        {
-            Log.e("MediaPlayer","Network Connectivity Exception", e);
+        ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
+        if (networkInfo != null && networkInfo.isConnected() == true) {
+            return true;
+        } else {
+            Toast.makeText(this, "İnternet bağlatısı bulunamadı.", Toast.LENGTH_SHORT).show();
             return false;
         }
     }
 
-    public void listenActivities(final String [] addressList, String [] headerList, ListView listView)
-    {
+    public void listenActivities(final String[] addressList, String[] headerList, ListView listView) {
         try {
             ArrayAdapter adapter = new ArrayAdapter<String>(this,
                     android.R.layout.simple_list_item_1, headerList);
@@ -114,10 +93,8 @@ public abstract class MPAs extends AppCompatActivity {
 
                 }
             });
-        }
-        catch (Exception e)
-        {
-            Log.e("MediaPlayer","Listen Activities Exception", e);
+        } catch (Exception e) {
+            Log.e("MediaPlayer", "Listen Activities Exception", e);
         }
     }
 }

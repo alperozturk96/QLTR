@@ -18,9 +18,9 @@ public class BodyPartsExerciseA1 extends AppCompatActivity {
     private BootstrapEditText answer;
     private ImageView question;
     private int question_counter = 0;
-    private int [] questionPics = {R.drawable.brain,R.drawable.eyes,R.drawable.hand,R.drawable.lungs};
-    private String [] trueAnswers = {"Beyin","Göz","El","Akciğer"};
-    private String[] low_trueAnswers = {"beyin","göz","el","akciğer"};
+    private int[] questionPics = {R.drawable.brain, R.drawable.eyes, R.drawable.hand, R.drawable.lungs};
+    private String[] trueAnswers = {"Beyin", "Göz", "El", "Akciğer"};
+    private String[] low_trueAnswers = {"beyin", "göz", "el", "akciğer"};
     private DbOperations db;
 
     @Override
@@ -28,47 +28,34 @@ public class BodyPartsExerciseA1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bodyparts_exercise);
 
-        try {
-            answer = findViewById(R.id.answerBody);
-            question = findViewById(R.id.brainQ);
-            db = new DbOperations(BodyPartsExerciseA1.this);
-        }
-        catch (Exception e)
-        {
-            Log.e("SubCore/BodyParts","OnCreate Exception", e);
-        }
+        answer = findViewById(R.id.answerBody);
+        question = findViewById(R.id.brainQ);
+        db = new DbOperations(BodyPartsExerciseA1.this);
     }
 
     public void answerButtonOnClick(View view) {
         try {
             String written_answer = answer.getText().toString();
-            if (written_answer.equals(trueAnswers[question_counter]) || written_answer.equals(low_trueAnswers[question_counter]) ) {
+            if (written_answer.equals(trueAnswers[question_counter]) || written_answer.equals(low_trueAnswers[question_counter])) {
                 db.increaseScore(4);
             } else {
                 db.wrongAnswer();
             }
-        }
-        catch (Exception e)
-        {
-            Log.e("SubCore/BodyParts","AnswerButton Exception", e);
+        } catch (Exception e) {
+            Log.e("SubCore/BodyParts", "AnswerButton Exception", e);
         }
     }
 
     public void nextQuestionOnClick(View view) {
         try {
-            if(question_counter == 3)
-            {
+            if (question_counter == 3) {
                 Toast.makeText(this, "Bitirdiniz tebrikler.", Toast.LENGTH_SHORT).show();
-            }
-            else
-            {
+            } else {
                 question_counter++;
                 question.setImageResource(questionPics[question_counter]);
             }
-        }
-        catch (Exception e)
-        {
-            Log.e("SubCore/BodyParts","NextQuestionOnClick Exception", e);
+        } catch (Exception e) {
+            Log.e("SubCore/BodyParts", "NextQuestionOnClick Exception", e);
         }
     }
 }

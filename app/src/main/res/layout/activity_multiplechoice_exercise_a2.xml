@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@color/pure_black"
     android:layout_height="match_parent"
+    android:background="@color/pure_black"
     tools:context=".Sub_Core.MultipleChoiceExerciseA2">
 
     <com.beardedhen.androidbootstrap.BootstrapWell
@@ -36,8 +36,8 @@
         android:id="@+id/backHome"
         android:layout_width="92dp"
         android:layout_height="49dp"
-        app:bootstrapBrand="success"
         android:onClick="goHome"
+        app:bootstrapBrand="success"
         app:bootstrapSize="lg"
         app:buttonMode="regular"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -67,11 +67,11 @@
 
     <com.beardedhen.androidbootstrap.BootstrapButton
         android:id="@+id/answer2"
+        android:layout_width="390dp"
+        android:layout_height="58dp"
         app:bootstrapBrand="primary"
         app:bootstrapSize="lg"
         app:buttonMode="regular"
-        android:layout_width="390dp"
-        android:layout_height="58dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.476"
@@ -83,11 +83,11 @@
 
     <com.beardedhen.androidbootstrap.BootstrapButton
         android:id="@+id/answer3"
+        android:layout_width="390dp"
+        android:layout_height="58dp"
         app:bootstrapBrand="primary"
         app:bootstrapSize="lg"
         app:buttonMode="regular"
-        android:layout_width="390dp"
-        android:layout_height="58dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.476"

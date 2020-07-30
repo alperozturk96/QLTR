@@ -29,15 +29,14 @@ public class DbOperations extends AppCompatActivity {
     private Context context;
     private FirebaseAuth auth;
 
+    public DbOperations(@NonNull Context context) {
+        this.context = context;
+    }
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         context = this;
-    }
-
-    public DbOperations(@NonNull Context context)
-    {
-        this.context = context;
     }
 
     public void wrongAnswer() {
@@ -66,15 +65,12 @@ public class DbOperations extends AppCompatActivity {
                             Toast.makeText(context, "Skorunuz kaydedilemedi.", Toast.LENGTH_SHORT).show();
                         }
                     });
-        }
-        catch (Exception e)
-        {
-            Log.e("DbOperations","IncreaseScore Exception", e);
+        } catch (Exception e) {
+            Log.e("DbOperations", "IncreaseScore Exception", e);
         }
     }
 
-    public void logout()
-    {
+    public void logout() {
         try {
             auth = FirebaseAuth.getInstance();
             auth.signOut();
@@ -94,10 +90,8 @@ public class DbOperations extends AppCompatActivity {
                     }
                 }
             };
-        }
-        catch (Exception e)
-        {
-            Log.e("DbOperations","Logout Exception", e);
+        } catch (Exception e) {
+            Log.e("DbOperations", "Logout Exception", e);
         }
     }
 }

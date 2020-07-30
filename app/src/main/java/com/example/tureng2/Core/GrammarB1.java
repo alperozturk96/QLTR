@@ -1,7 +1,6 @@
 package com.example.tureng2.Core;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 
@@ -32,104 +31,50 @@ public class GrammarB1 extends AppCompatActivity implements NavigationView.OnNav
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_grammar_b1);
 
-        try {
-            sectionMainB1 = findViewById(R.id.grammar_levelb1_main);
-            db = new DbOperations(GrammarB1.this);
-            sideMenu = new SideMenu(GrammarB1.this);
-            sideMenu.createDrawer();
-        }
-        catch (Exception e)
-        {
-            Log.e("Core/GrammarB1","OnCreate Exception", e);
-        }
+        sectionMainB1 = findViewById(R.id.grammar_levelb1_main);
+        db = new DbOperations(GrammarB1.this);
+        sideMenu = new SideMenu(GrammarB1.this);
+        sideMenu.createDrawer();
     }
 
-    public void prepareFragment()
-    {
-        try {
-            sectionMainB1.setVisibility(View.GONE);
-            fm = getSupportFragmentManager();
-        }
-        catch (Exception e)
-        {
-            Log.e("Core/GrammarB1","Prepare Fragment Exception", e);
-        }
+    public void prepareFragment() {
+        sectionMainB1.setVisibility(View.GONE);
+        fm = getSupportFragmentManager();
     }
 
-    public void nounOnClick(View view)
-    {
-        try {
-            prepareFragment();
-            NounExamples_B1 fragment_nounverb = new NounExamples_B1();
-            fm.beginTransaction().replace(R.id.grammar_levelb1,fragment_nounverb).commit();
-        }
-        catch (Exception e)
-        {
-            Log.e("Core/GrammarB1","Noun OnClick Exception", e);
-        }
+    public void nounOnClick(View view) {
+        prepareFragment();
+        NounExamples_B1 fragment_nounverb = new NounExamples_B1();
+        fm.beginTransaction().replace(R.id.grammar_levelb1, fragment_nounverb).commit();
     }
 
-    public void verbOnClick(View view)
-    {
-        try {
-            prepareFragment();
-            VerbsExamples_B1 fragment_verbsExamples_b1 = new VerbsExamples_B1();
-            fm.beginTransaction().replace(R.id.grammar_levelb1,fragment_verbsExamples_b1).commit();
-        }
-        catch (Exception e)
-        {
-            Log.e("Core/GrammarB1","Verb On Click Exception", e);
-        }
+    public void verbOnClick(View view) {
+        prepareFragment();
+        VerbsExamples_B1 fragment_verbsExamples_b1 = new VerbsExamples_B1();
+        fm.beginTransaction().replace(R.id.grammar_levelb1, fragment_verbsExamples_b1).commit();
     }
 
-    public void adverbOnClick(View view)
-    {
-        try {
-            prepareFragment();
-            AdverbVerbB1 fragment_adverb = new AdverbVerbB1();
-            fm.beginTransaction().replace(R.id.grammar_levelb1,fragment_adverb).commit();
-        }
-        catch (Exception e)
-        {
-            Log.e("Core/GrammarB1","Adverb On Click Exception", e);
-        }
+    public void adverbOnClick(View view) {
+        prepareFragment();
+        AdverbVerbB1 fragment_adverb = new AdverbVerbB1();
+        fm.beginTransaction().replace(R.id.grammar_levelb1, fragment_adverb).commit();
     }
 
-    public void imperfectOnClick(View view)
-    {
-        try {
-            prepareFragment();
-            ImperfectTenseExampleA2 fragment_imperfect = new ImperfectTenseExampleA2();
-            fm.beginTransaction().replace(R.id.grammar_levelb1,fragment_imperfect).commit();
-        }
-        catch (Exception e)
-        {
-            Log.e("Core/GrammarB1","Imperfect On Click Exception", e);
-        }
+    public void imperfectOnClick(View view) {
+        prepareFragment();
+        ImperfectTenseExampleA2 fragment_imperfect = new ImperfectTenseExampleA2();
+        fm.beginTransaction().replace(R.id.grammar_levelb1, fragment_imperfect).commit();
     }
 
     public void emergencyOnClick(View view) {
-        try {
-            prepareFragment();
-            EmergencyNumbersB1 fragment_emergency = new EmergencyNumbersB1();
-            fm.beginTransaction().replace(R.id.grammar_levelb1, fragment_emergency).commit();
-        }
-        catch (Exception e)
-        {
-            Log.e("Core/GrammarB1","Emergency On Click Exception", e);
-        }
+        prepareFragment();
+        EmergencyNumbersB1 fragment_emergency = new EmergencyNumbersB1();
+        fm.beginTransaction().replace(R.id.grammar_levelb1, fragment_emergency).commit();
     }
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-        try {
-            sideMenu.onNavigationItemSelected(menuItem);
-            return true;
-        }
-        catch (Exception e)
-        {
-            Log.e("Core/GrammarB1","Navigation Item Selected Exception", e);
-            return false;
-        }
+        sideMenu.onNavigationItemSelected(menuItem);
+        return true;
     }
 }

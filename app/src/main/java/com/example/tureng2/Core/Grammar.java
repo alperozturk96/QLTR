@@ -3,7 +3,6 @@ package com.example.tureng2.Core;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
@@ -21,49 +20,25 @@ public class Grammar extends Login {
     }
 
     public void grammar_levela1OnClick(View view) {
-        try {
-            Intent intent = new Intent(this, GrammarA1.class);
-            startActivity(intent);
-        }
-        catch (Exception e)
-        {
-            Log.e("Core/Grammar","Intent Exception", e);
-        }
+        Intent intent = new Intent(this, GrammarA1.class);
+        startActivity(intent);
     }
 
     public void grammar_levela2OnClick(View view) {
-        try {
-            if(loggedScore > 25)
-            {
-                Intent intent = new Intent(this, GrammarA2.class);
-                startActivity(intent);
-            }
-            else
-            {
-                Toast.makeText(getApplicationContext(), "Yeterli puanınız olmadığı için bu bölüme geçemezsiniz.", Toast.LENGTH_SHORT).show();
-            }
-        }
-        catch (Exception e)
-        {
-            Log.e("Core/Grammar","Intent Exception", e);
+        if (loggedScore > 25) {
+            Intent intent = new Intent(this, GrammarA2.class);
+            startActivity(intent);
+        } else {
+            Toast.makeText(getApplicationContext(), "Yeterli puanınız olmadığı için bu bölüme geçemezsiniz.", Toast.LENGTH_SHORT).show();
         }
     }
 
     public void grammar_levelb1OnClick(View view) {
-        try {
-            if(loggedScore > 50)
-            {
-                Intent intent = new Intent(this, GrammarB1.class);
-                startActivity(intent);
-            }
-            else
-            {
-                Toast.makeText(getApplicationContext(), "Yeterli puanınız olmadığı için bu bölüme geçemezsiniz.", Toast.LENGTH_SHORT).show();
-            }
-        }
-        catch (Exception e)
-        {
-            Log.e("Core/Grammar","Intent Exception", e);
+        if (loggedScore > 50) {
+            Intent intent = new Intent(this, GrammarB1.class);
+            startActivity(intent);
+        } else {
+            Toast.makeText(getApplicationContext(), "Yeterli puanınız olmadığı için bu bölüme geçemezsiniz.", Toast.LENGTH_SHORT).show();
         }
     }
 }

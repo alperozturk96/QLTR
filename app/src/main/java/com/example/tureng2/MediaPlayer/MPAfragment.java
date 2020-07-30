@@ -15,30 +15,21 @@ public class MPAfragment extends AppCompatActivity {
 
     private Context context;
 
-    public MPAfragment(@NonNull Context context)
-    {
+    public MPAfragment(@NonNull Context context) {
         this.context = context;
     }
 
-    public final void mpStartWithContext(String data, Context context)
-    {
+    public final void mpStartWithContext(String data, Context context) {
         try {
-            if (mediaPlayer.isPlaying() == true) {
+            if (mediaPlayer.isPlaying()) {
                 mpPauseStop();
-                mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
-                mediaPlayer = MediaPlayer.create(context, Uri.parse(data));
-                mediaPlayer.isPlaying();
-                mediaPlayer.start();
-            } else {
-                mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
-                mediaPlayer = MediaPlayer.create(context, Uri.parse(data));
-                mediaPlayer.isPlaying();
-                mediaPlayer.start();
             }
-        }
-        catch (Exception e)
-        {
-            Log.e("MediaPlayer","MediaPlayer Start Exception", e);
+            mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
+            mediaPlayer = MediaPlayer.create(context, Uri.parse(data));
+            mediaPlayer.isPlaying();
+            mediaPlayer.start();
+        } catch (Exception e) {
+            Log.e("MediaPlayer", "MediaPlayer Start Exception", e);
         }
     }
 
@@ -49,10 +40,8 @@ public class MPAfragment extends AppCompatActivity {
             mediaPlayer.stop();
             mediaPlayer.release();
             mediaPlayer = new MediaPlayer();
-        }
-        catch (Exception e)
-        {
-            Log.e("MediaPlayer","MediaPlayer Stop Exception", e);
+        } catch (Exception e) {
+            Log.e("MediaPlayer", "MediaPlayer Stop Exception", e);
         }
     }
 }
